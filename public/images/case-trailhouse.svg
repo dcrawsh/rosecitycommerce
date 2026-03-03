@@ -1,0 +1,11 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#F6F3ED"/>
+  <rect x="60" y="70" width="1080" height="560" rx="18" fill="#FFFFFF" stroke="#D8D3C9"/>
+  <rect x="100" y="120" width="420" height="26" rx="6" fill="#163229" fill-opacity="0.9"/>
+  <rect x="100" y="165" width="280" height="16" rx="6" fill="#4A5451" fill-opacity="0.55"/>
+  <rect x="100" y="220" width="300" height="260" rx="10" fill="#ECE8DF"/>
+  <rect x="420" y="220" width="300" height="260" rx="10" fill="#ECE8DF"/>
+  <rect x="740" y="220" width="300" height="260" rx="10" fill="#ECE8DF"/>
+  <rect x="100" y="520" width="220" height="44" rx="8" fill="#B56A3A"/>
+  <text x="110" y="548" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Trailhouse Preview</text>
+</svg>

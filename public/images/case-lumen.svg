@@ -1,0 +1,12 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#F6F3ED"/>
+  <rect x="55" y="65" width="1090" height="570" rx="18" fill="#FFFFFF" stroke="#D8D3C9"/>
+  <rect x="105" y="115" width="420" height="24" rx="6" fill="#163229"/>
+  <rect x="105" y="155" width="340" height="14" rx="6" fill="#4A5451" fill-opacity="0.55"/>
+  <rect x="105" y="205" width="990" height="130" rx="10" fill="#ECE8DF"/>
+  <rect x="105" y="355" width="320" height="230" rx="10" fill="#ECE8DF"/>
+  <rect x="445" y="355" width="320" height="230" rx="10" fill="#ECE8DF"/>
+  <rect x="785" y="355" width="310" height="230" rx="10" fill="#ECE8DF"/>
+  <rect x="105" y="602" width="220" height="20" rx="8" fill="#B56A3A"/>
+  <text x="105" y="600" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="700">Lumen Preview</text>
+</svg>
