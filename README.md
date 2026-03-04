@@ -54,3 +54,11 @@ npm run start
 - Uses image placeholders in `public/images/` for case studies.
 - Includes a sticky mobile `Book a call` CTA and a limited-availability audit offer section.
 - See `BRANDING_SPEC.md` and `FUTURE_ENHANCEMENTS.md`.
+
+## Free Audit Email (Gmail)
+Set these environment variables for the audit form email route:
+
+- `GOOGLE_EMAIL=rosecitycommerce@gmail.com`
+- `GOOGLE_EMAIL_APP_KEY=your_google_app_password`
+- `AUDIT_FORM_TO=rosecitycommerce@gmail.com` (optional; defaults to `GOOGLE_EMAIL`)
+- `CONTACT_FORM_TO=rosecitycommerce@gmail.com` (optional; defaults to `GOOGLE_EMAIL`)

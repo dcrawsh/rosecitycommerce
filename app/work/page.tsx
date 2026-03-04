@@ -7,7 +7,13 @@ import { cn } from "@/components/utils";
 
 export const metadata: Metadata = {
   title: "Work",
-  description: "Case studies across Shopify, SFCC, CRO, SEO, ads, and analytics work."
+  description:
+    "Portland ecommerce case studies showing Shopify, SFCC, CRO, SEO, ads, and analytics outcomes.",
+  keywords: [
+    "Portland ecommerce developer",
+    "Shopify developer Portland",
+    "Ecommerce consultant Portland"
+  ]
 };
 
 export default async function WorkPage({

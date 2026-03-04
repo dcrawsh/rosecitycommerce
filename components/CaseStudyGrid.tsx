@@ -26,6 +26,9 @@ export function CaseStudyGrid({ studies }: { studies: CaseStudy[] }) {
               ))}
             </div>
             <h3 className="font-sans text-xl font-bold text-forest-900">{study.title}</h3>
+            <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-700">
+              {study.businessType}
+            </p>
             <p className="mt-2 text-sm leading-relaxed text-slate-700">{study.excerpt}</p>
             <Link
               className="mt-4 inline-flex text-sm font-semibold text-copper-600 underline-offset-4 hover:underline"

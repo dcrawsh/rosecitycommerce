@@ -1,29 +1,34 @@
 export const capabilityBuckets = [
   {
-    title: "Build & Integrations",
+    title: "Build",
     items: [
-      "Shopify theme and section development",
-      "SFCC cartridge and site enhancements",
-      "Headless and API integrations",
-      "PIM/ERP integration support"
+      "Shopify store builds for Portland brands ready to sell online",
+      "Ecommerce site development focused on clean, maintainable storefronts",
+      "Integrations that connect your storefront, operations, and marketing tools"
     ]
   },
   {
-    title: "Optimize & CRO",
+    title: "Optimize",
     items: [
-      "Speed and Core Web Vitals improvements",
-      "UX and checkout flow refinement",
-      "Experiment and test planning",
-      "Merchandising architecture"
+      "Improve conversion with faster pages and better product layouts",
+      "Site speed improvements that reduce bounce and increase add-to-cart",
+      "UX and checkout optimization to remove purchase friction"
     ]
   },
   {
-    title: "Growth & Marketing",
+    title: "Grow",
     items: [
-      "Technical SEO and on-page improvements",
-      "Google Ads support and landing alignment",
-      "Email/SMS lifecycle fundamentals",
-      "Tracking and attribution cleanup"
+      "Technical SEO improvements that increase qualified organic traffic",
+      "Google Ads support aligned to landing pages and conversion goals",
+      "Product feed optimization to improve visibility and paid efficiency"
+    ]
+  },
+  {
+    title: "Measure",
+    items: [
+      "GA4 setup and analytics cleanup for reliable reporting",
+      "Conversion tracking that reflects real business outcomes",
+      "Dashboards your team can actually use for decision-making"
     ]
   }
 ] as const;
@@ -97,10 +102,10 @@ export const packages: PricingPackage[] = [
 ];
 
 export const trustStats = [
-  "Shopify + SFCC experience",
+  "Portland-based ecommerce consultant",
+  "Shopify + Salesforce Commerce Cloud",
   "Senior engineer-led delivery",
-  "Performance + growth integrated",
-  "Built to work with existing teams"
+  "Fast storefronts, higher conversion, clear analytics"
 ] as const;
 
 export const platformBadges = [

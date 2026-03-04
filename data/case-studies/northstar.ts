@@ -2,24 +2,29 @@ import { CaseStudy } from "@/data/case-studies/types";
 
 export const northstar: CaseStudy = {
   slug: "northstar-home-sfcc-performance-analytics",
-  title: "SFCC performance sprint with measurable checkout gains",
+  title: "SFCC optimization that improved checkout completion",
   client: "Northstar Home",
+  businessType: "Home goods retailer",
+  challenge:
+    "Slow category templates and inconsistent analytics across locales were hurting conversion and decision-making.",
   excerpt:
-    "Stabilized SFCC storefront performance, reduced cart friction, and restored trustworthy reporting.",
+    "SFCC performance and analytics work that increased checkout completion and reporting confidence.",
   tags: ["SFCC", "CRO", "Analytics"],
   context:
-    "A home goods retailer on SFCC saw rising ad spend but flat revenue growth due to slow category pages and inconsistent tracking across locale sites.",
+    "The company needed a senior developer who could work with existing teams and stabilize both performance and measurement.",
   goals: [
     "Lower template render bottlenecks",
     "Reduce checkout abandonment",
     "Standardize event tracking across locales"
   ],
   workDone: [
-    "Optimized cartridge-level asset loading and deferred non-critical scripts",
-    "Simplified multi-step checkout UI and improved error handling",
-    "Defined shared analytics schema across locales and channel touchpoints",
-    "Delivered dashboard views for acquisition and merchandising teams"
+    "Optimized SFCC template asset loading and deferred non-critical scripts",
+    "Simplified checkout interaction flow and error handling",
+    "Standardized analytics schema across locale sites",
+    "Delivered practical dashboards for ecommerce and marketing"
   ],
+  measurableImprovement:
+    "Checkout completion and template speed improved while tracked revenue confidence increased.",
   stack: ["SFCC", "ISML", "SCAPI", "GA4", "GTM", "BigQuery"],
   metrics: [
     { label: "Checkout completion", before: "47%", after: "58%", delta: "+11 pts" },
@@ -27,8 +32,8 @@ export const northstar: CaseStudy = {
     { label: "Tracked revenue confidence", before: "71%", after: "94%", delta: "+23 pts" }
   ],
   lessons: [
-    "Small checkout friction points become major revenue leaks at scale.",
-    "Shared data contracts reduce reporting conflicts between teams."
+    "Small checkout friction points create meaningful revenue loss at scale.",
+    "Shared tracking contracts reduce cross-team reporting issues."
   ],
   image: "/images/case-northstar.svg"
 };

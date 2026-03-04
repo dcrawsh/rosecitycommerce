@@ -5,14 +5,20 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get a quote for Shopify, SFCC, CRO, performance, analytics, SEO, and paid support."
+  description:
+    "Contact a Portland ecommerce developer for Shopify help, SEO, Google Ads support, CRO, and analytics cleanup.",
+  keywords: [
+    "Shopify developer Portland",
+    "Portland ecommerce developer",
+    "Ecommerce consultant Portland"
+  ]
 };
 
 export default function ContactPage() {
   return (
     <Section
       title="Contact"
-      intro="Share your goals, current setup, and timeline. I’ll recommend the best next step."
+      intro="Tell me about your business, platform, and goals. I will recommend the best next step."
     >
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         <ContactForm />

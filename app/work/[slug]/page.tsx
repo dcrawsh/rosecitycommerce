@@ -49,21 +49,17 @@ export default async function CaseStudyDetail({
 
         <div className="grid gap-6 md:grid-cols-2">
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-2xl font-bold text-forest-900">Context</h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.context}</p>
+            <h2 className="font-sans text-xl font-bold text-forest-900">Business type</h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.businessType}</p>
           </article>
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-2xl font-bold text-forest-900">Goals</h2>
-            <ul className="mt-3 space-y-2 text-sm text-slate-700">
-              {study.goals.map((goal) => (
-                <li key={goal}>{goal}</li>
-              ))}
-            </ul>
+            <h2 className="font-sans text-xl font-bold text-forest-900">Challenge</h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.challenge}</p>
           </article>
         </div>
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">What I did</h2>
+          <h2 className="font-sans text-2xl font-bold text-forest-900">Work completed</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-700">
             {study.workDone.map((item) => (
               <li key={item}>{item}</li>
@@ -72,14 +68,8 @@ export default async function CaseStudyDetail({
         </article>
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">Stack</h2>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {study.stack.map((item) => (
-              <span key={item} className="rounded-full bg-paper-100 px-3 py-1 text-sm font-semibold text-charcoal-900">
-                {item}
-              </span>
-            ))}
-          </div>
+          <h2 className="font-sans text-2xl font-bold text-forest-900">Measurable improvement</h2>
+          <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.measurableImprovement}</p>
         </article>
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
@@ -109,12 +99,14 @@ export default async function CaseStudyDetail({
         </article>
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">Lessons learned</h2>
-          <ul className="mt-3 space-y-2 text-sm text-slate-700">
-            {study.lessons.map((lesson) => (
-              <li key={lesson}>{lesson}</li>
+          <h2 className="font-sans text-2xl font-bold text-forest-900">Stack</h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {study.stack.map((item) => (
+              <span key={item} className="rounded-full bg-paper-100 px-3 py-1 text-sm font-semibold text-charcoal-900">
+                {item}
+              </span>
             ))}
-          </ul>
+          </div>
         </article>
 
         <div className="flex flex-wrap gap-3">

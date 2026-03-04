@@ -1,156 +1,166 @@
+export type ServiceCategory = "Build" | "Optimize" | "Grow" | "Measure";
+
 export type ServiceItem = {
   slug: string;
   title: string;
-  problem: string;
-  outcomes: string[];
-  deliverables: string[];
-  idealFor: string;
-  timeline: string;
+  category: ServiceCategory;
+  outcome: string;
+  details: string[];
 };
 
 export const services: ServiceItem[] = [
   {
-    slug: "shopify",
-    title: "Shopify Development",
-    problem: "Your store is hard to maintain, slow to iterate, or blocked by app conflicts.",
-    outcomes: [
-      "Faster shipping of merchandising and campaign updates",
-      "Cleaner theme architecture and fewer breakages",
-      "Improved conversion paths across PDP, cart, and checkout"
-    ],
-    deliverables: [
-      "Theme sections and templates",
-      "App integrations and QA",
-      "Checkout extensibility planning",
-      "Performance and tracking baseline"
-    ],
-    idealFor: "Brands on Shopify needing senior-level ownership without hiring a full internal team.",
-    timeline: "2-8 weeks depending on scope"
+    slug: "shopify-store-builds",
+    title: "Shopify store builds",
+    category: "Build",
+    outcome: "Launch a storefront that is fast, stable, and ready to convert from day one.",
+    details: [
+      "Theme architecture",
+      "Collection/PDP template setup",
+      "Essential app and system integrations"
+    ]
   },
   {
-    slug: "sfcc",
-    title: "Salesforce Commerce Cloud",
-    problem: "Your SFCC site has slow release cycles, technical debt, or integration blind spots.",
-    outcomes: [
-      "More stable storefront performance",
-      "Better integration reliability across systems",
-      "Faster iteration on revenue-critical templates"
-    ],
-    deliverables: [
-      "Cartridge and site enhancements",
-      "Integration hardening",
-      "Template and asset optimization",
-      "Analytics instrumentation"
-    ],
-    idealFor: "Teams that need senior SFCC support integrated with existing engineering and agency partners.",
-    timeline: "3-10 weeks"
+    slug: "ecommerce-site-development",
+    title: "Ecommerce site development",
+    category: "Build",
+    outcome: "Ship clean ecommerce experiences without bloated code or fragile setup.",
+    details: [
+      "Custom sections and templates",
+      "Headless/API work where needed",
+      "Maintainable code handoff"
+    ]
+  },
+  {
+    slug: "integrations",
+    title: "Integrations",
+    category: "Build",
+    outcome: "Connect your storefront with the tools your team already depends on.",
+    details: [
+      "ERP/PIM integration support",
+      "Marketing and analytics connections",
+      "Data flow validation"
+    ]
   },
   {
     slug: "cro",
-    title: "CRO & UX",
-    problem: "Traffic is growing but conversion is flat or inconsistent.",
-    outcomes: [
-      "Higher conversion from existing traffic",
-      "Lower checkout abandonment",
-      "Clearer experimentation roadmap"
-    ],
-    deliverables: [
-      "CRO audit with prioritized backlog",
-      "UX fixes for key funnel pages",
-      "A/B testing plan",
-      "Merchandising recommendations"
-    ],
-    idealFor: "Brands with steady traffic who want more revenue without relying only on more ad spend.",
-    timeline: "2-6 weeks"
+    title: "CRO",
+    category: "Optimize",
+    outcome: "Improve conversion with faster pages and better product layouts.",
+    details: [
+      "Funnel audits",
+      "PDP/collection UX improvements",
+      "Prioritized test backlog"
+    ]
   },
   {
-    slug: "performance",
-    title: "Performance Engineering",
-    problem: "Slow pages hurt conversion, rankings, and ad efficiency.",
-    outcomes: [
-      "Improved Core Web Vitals",
-      "Faster interactive experiences on mobile",
-      "Lower bounce on landing pages"
-    ],
-    deliverables: [
-      "Template-level speed audit",
-      "Image and asset strategy",
-      "Script and bundle cleanup",
-      "Caching recommendations"
-    ],
-    idealFor: "Stores with good products but weak speed metrics.",
-    timeline: "1-4 weeks"
+    slug: "site-speed-improvements",
+    title: "Site speed improvements",
+    category: "Optimize",
+    outcome: "Reduce load times so more visitors stay engaged and buy.",
+    details: [
+      "Core Web Vitals fixes",
+      "Image and script optimization",
+      "Template-level performance tuning"
+    ]
+  },
+  {
+    slug: "ux-improvements",
+    title: "UX improvements",
+    category: "Optimize",
+    outcome: "Make key buying actions clearer so customers move through the funnel faster.",
+    details: [
+      "Navigation and merchandising UX",
+      "Mobile-first refinements",
+      "Form and error-state cleanup"
+    ]
+  },
+  {
+    slug: "checkout-optimization",
+    title: "Checkout optimization",
+    category: "Optimize",
+    outcome: "Recover lost revenue by reducing checkout friction and abandonment.",
+    details: [
+      "Checkout flow simplification",
+      "Trust and clarity improvements",
+      "Tracking for checkout drop-off"
+    ]
   },
   {
     slug: "seo",
-    title: "Technical SEO",
-    problem: "Search visibility is limited by crawl/indexing and template issues.",
-    outcomes: [
-      "Cleaner crawl paths and indexing",
-      "Better relevance on priority collection and product pages",
-      "Safer migrations with ranking protection"
-    ],
-    deliverables: [
-      "Technical SEO audit",
-      "On-page and schema recommendations",
-      "Internal linking and IA improvements",
-      "Migration support plans"
-    ],
-    idealFor: "Teams seeing SEO plateaus or preparing for major storefront changes.",
-    timeline: "2-6 weeks"
-  },
-  {
-    slug: "analytics",
-    title: "Analytics & Tracking",
-    problem: "Reporting is fragmented and attribution can’t be trusted.",
-    outcomes: [
-      "Reliable revenue and funnel reporting",
-      "Clear campaign and channel attribution",
-      "Shared event schema for teams and vendors"
-    ],
-    deliverables: [
-      "GA4/GTM setup or repair",
-      "Event naming schema",
-      "Segment routing",
-      "Dashboard foundation"
-    ],
-    idealFor: "Brands making decisions from conflicting data sources.",
-    timeline: "1-5 weeks"
+    title: "SEO",
+    category: "Grow",
+    outcome: "Increase qualified traffic with technical SEO that supports ecommerce revenue pages.",
+    details: [
+      "Technical SEO audits",
+      "On-page and schema updates",
+      "Crawl and indexing fixes"
+    ]
   },
   {
     slug: "google-ads",
-    title: "Google Ads Support",
-    problem: "Paid spend rises while efficiency and measurement lag.",
-    outcomes: [
-      "Lower wasted spend",
-      "Better feed and campaign structure",
-      "Higher intent alignment between ad and landing page"
-    ],
-    deliverables: [
-      "Account setup or restructure",
-      "Shopping feed support",
-      "Landing page alignment",
-      "Conversion tracking validation"
-    ],
-    idealFor: "Teams who need paid support tied tightly to storefront and data quality.",
-    timeline: "2-8 weeks"
+    title: "Google Ads",
+    category: "Grow",
+    outcome: "Reduce paid waste and improve campaign efficiency with better landing alignment.",
+    details: [
+      "Account structure support",
+      "Conversion-focused landing pages",
+      "Tracking validation"
+    ]
   },
   {
-    slug: "lifecycle",
-    title: "Lifecycle Basics (Optional)",
-    problem: "Post-purchase and retention flows are underdeveloped.",
-    outcomes: [
-      "Higher repeat purchase contribution",
-      "Improved campaign-to-site consistency",
-      "Foundational lifecycle automations"
-    ],
-    deliverables: [
-      "Klaviyo/email/SMS baseline",
-      "Core flow setup guidance",
-      "Audience and segmentation mapping",
-      "Measurement framework"
-    ],
-    idealFor: "Brands that want practical lifecycle fundamentals before scaling complex automation.",
-    timeline: "1-4 weeks"
+    slug: "product-feed-optimization",
+    title: "Product feed optimization",
+    category: "Grow",
+    outcome: "Improve feed quality so Shopping campaigns reach the right buyers.",
+    details: [
+      "Feed title and attribute cleanup",
+      "Catalog diagnostics",
+      "Merchant Center alignment"
+    ]
+  },
+  {
+    slug: "ga4-setup",
+    title: "GA4 setup",
+    category: "Measure",
+    outcome: "Get reliable reporting that matches what is happening in your store.",
+    details: [
+      "GA4 architecture and events",
+      "Ecommerce event validation",
+      "Attribution baseline"
+    ]
+  },
+  {
+    slug: "conversion-tracking",
+    title: "Conversion tracking",
+    category: "Measure",
+    outcome: "Track the actions that matter so ad and SEO decisions are based on real data.",
+    details: [
+      "GTM implementation",
+      "Channel conversion alignment",
+      "Debug and QA"
+    ]
+  },
+  {
+    slug: "dashboards",
+    title: "Dashboards",
+    category: "Measure",
+    outcome: "Give your team clear weekly visibility into performance and revenue drivers.",
+    details: [
+      "Executive KPI dashboard",
+      "Channel and funnel views",
+      "Custom reporting logic"
+    ]
+  },
+  {
+    slug: "analytics-cleanup",
+    title: "Analytics cleanup",
+    category: "Measure",
+    outcome: "Fix inconsistent analytics so teams and vendors stop debating the numbers.",
+    details: [
+      "Event schema cleanup",
+      "Deduplication and naming standards",
+      "Documentation for handoff"
+    ]
   }
 ];

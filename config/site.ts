@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Rose City Commerce",
-  tagline: "Build + optimize + measure + scale.",
+  tagline: "Helping Portland businesses sell online.",
   description:
-    "Senior eCommerce engineering and growth support for Shopify and Salesforce Commerce Cloud teams.",
+    "Portland ecommerce consulting for Shopify development, CRO, SEO, analytics, and performance improvements.",
   url: "https://rosecitycommerce.com",
   email: "hello@rosecitycommerce.com",
   location: "Portland, OR",
@@ -14,6 +14,7 @@ export const siteConfig = {
 } as const;
 
 export const navItems = [
+  { label: "Free Audit", href: "/#free-audit" },
   { label: "Work", href: "/work" },
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },

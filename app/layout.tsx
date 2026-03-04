@@ -21,10 +21,16 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | eCommerce Engineering + Growth`,
+    default: `${siteConfig.name} | Helping Portland businesses sell online`,
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
+  keywords: [
+    "Portland ecommerce developer",
+    "Shopify developer Portland",
+    "Portland Shopify expert",
+    "Ecommerce consultant Portland"
+  ],
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,

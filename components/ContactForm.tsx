@@ -6,38 +6,39 @@ type FormState = {
   name: string;
   email: string;
   company: string;
+  website: string;
   platform: string;
   revenue: string;
   needs: string;
-  timeline: string;
-  website: string;
+  honeypot: string;
 };
 
 const initialState: FormState = {
   name: "",
   email: "",
   company: "",
+  website: "",
   platform: "Shopify",
   revenue: "",
   needs: "",
-  timeline: "",
-  website: ""
+  honeypot: ""
 };
 
 export function ContactForm() {
   const [form, setForm] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    if (form.website.trim() !== "") {
+    if (form.honeypot.trim() !== "") {
       setSubmitted(true);
       return;
     }
 
-    if (!form.name || !form.email || !form.company || !form.revenue || !form.needs || !form.timeline) {
+    if (!form.name || !form.email || !form.company || !form.website || !form.revenue || !form.needs) {
       setError("Please complete all required fields.");
       return;
     }
@@ -49,7 +50,25 @@ export function ContactForm() {
     }
 
     setError(null);
-    setSubmitted(true);
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form)
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError("Could not send right now. Please email hello@rosecitycommerce.com.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -100,20 +119,30 @@ export function ContactForm() {
           />
         </label>
         <label className="text-sm font-semibold text-charcoal-900">
-          Store platform
+          Website *
+          <input
+            className="mt-1 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-charcoal-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500"
+            onChange={(event) => setForm((state) => ({ ...state, website: event.target.value }))}
+            placeholder="https://"
+            required
+            type="url"
+            value={form.website}
+          />
+        </label>
+      </div>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        <label className="text-sm font-semibold text-charcoal-900">
+          Platform
           <select
             className="mt-1 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-charcoal-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500"
             onChange={(event) => setForm((state) => ({ ...state, platform: event.target.value }))}
             value={form.platform}
           >
             <option>Shopify</option>
-            <option>SFCC</option>
             <option>Other</option>
           </select>
         </label>
-      </div>
-
-      <div className="grid gap-4 md:grid-cols-2">
         <label className="text-sm font-semibold text-charcoal-900">
           Monthly revenue range *
           <select
@@ -123,6 +152,7 @@ export function ContactForm() {
             value={form.revenue}
           >
             <option value="">Select range</option>
+            <option>Under $20k</option>
             <option>$20k-$50k</option>
             <option>$50k-$100k</option>
             <option>$100k-$250k</option>
@@ -130,24 +160,10 @@ export function ContactForm() {
             <option>$1M-$10M</option>
           </select>
         </label>
-        <label className="text-sm font-semibold text-charcoal-900">
-          Timeline *
-          <select
-            className="mt-1 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-charcoal-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500"
-            onChange={(event) => setForm((state) => ({ ...state, timeline: event.target.value }))}
-            required
-            value={form.timeline}
-          >
-            <option value="">Select timeline</option>
-            <option>ASAP (this month)</option>
-            <option>1-2 months</option>
-            <option>Quarter planning</option>
-          </select>
-        </label>
       </div>
 
       <label className="text-sm font-semibold text-charcoal-900">
-        What do you need? *
+        What help do you need? *
         <textarea
           className="mt-1 min-h-32 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-charcoal-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500"
           onChange={(event) => setForm((state) => ({ ...state, needs: event.target.value }))}
@@ -158,12 +174,12 @@ export function ContactForm() {
 
       <div className="hidden" aria-hidden="true">
         <label>
-          Website
+          Leave this field blank
           <input
-            onChange={(event) => setForm((state) => ({ ...state, website: event.target.value }))}
+            onChange={(event) => setForm((state) => ({ ...state, honeypot: event.target.value }))}
             tabIndex={-1}
             type="text"
-            value={form.website}
+            value={form.honeypot}
           />
         </label>
       </div>
@@ -172,9 +188,10 @@ export function ContactForm() {
 
       <button
         className="inline-flex items-center justify-center rounded-md bg-copper-500 px-5 py-3 text-sm font-semibold text-paper-50 transition hover:bg-copper-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500"
+        disabled={loading}
         type="submit"
       >
-        Send inquiry
+        {loading ? "Sending..." : "Send inquiry"}
       </button>
       <p className="text-xs text-slate-700">Friendly note: limited project slots each month.</p>
     </form>
