@@ -4,16 +4,16 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, website, platform, goal, honey } = body as {
+    const { name, email, website, businessType, goal, honeypot } = body as {
       name?: string;
       email?: string;
       website?: string;
-      platform?: string;
+      businessType?: string;
       goal?: string;
-      honey?: string;
+      honeypot?: string;
     };
 
-    if (honey && honey.trim() !== "") {
+    if (honeypot && honeypot.trim() !== "") {
       return NextResponse.json({ ok: true });
     }
 
@@ -43,7 +43,7 @@ export async function POST(request: Request) {
         `Name: ${name}`,
         `Email: ${email}`,
         `Website: ${website}`,
-        `Platform: ${platform || "Not provided"}`,
+        `Business type: ${businessType || "Not provided"}`,
         `Biggest goal: ${goal}`
       ].join("\n")
     });

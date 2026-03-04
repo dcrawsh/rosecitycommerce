@@ -8,7 +8,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-paper-50/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <Link href="/" className="font-sans text-base font-bold text-forest-900">
-          {siteConfig.name}
+          {siteConfig.brandName}
         </Link>
         <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
@@ -20,8 +20,8 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Button href="/contact" variant="secondary" className="px-4 py-2 text-sm">
-            Get a quote
+          <Button href="/#free-audit" variant="secondary" className="px-4 py-2 text-sm">
+            Request a free audit
           </Button>
         </nav>
         <MobileMenu />

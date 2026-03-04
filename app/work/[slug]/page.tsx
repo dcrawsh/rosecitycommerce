@@ -36,10 +36,10 @@ export default async function CaseStudyDetail({
   }
 
   return (
-    <Section title={study.title} intro={study.excerpt}>
+    <Section titleAs="h1" title={study.title} intro={study.excerpt}>
       <div className="grid gap-8">
         <Image
-          alt={`${study.client} storefront screenshot placeholder`}
+          alt={`${study.client} screenshot placeholder`}
           className="h-auto w-full rounded-lg border border-border bg-white"
           height={540}
           priority
@@ -49,53 +49,31 @@ export default async function CaseStudyDetail({
 
         <div className="grid gap-6 md:grid-cols-2">
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-xl font-bold text-forest-900">Business type</h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.businessType}</p>
+            <h2 className="font-sans text-xl font-bold text-forest-900">Context</h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.context}</p>
           </article>
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-xl font-bold text-forest-900">Challenge</h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.challenge}</p>
+            <h2 className="font-sans text-xl font-bold text-forest-900">Problem</h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.problem}</p>
           </article>
         </div>
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">Work completed</h2>
+          <h2 className="font-sans text-2xl font-bold text-forest-900">Solution</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-700">
-            {study.workDone.map((item) => (
+            {study.solution.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
         </article>
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">Measurable improvement</h2>
-          <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.measurableImprovement}</p>
-        </article>
-
-        <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">Before / after metrics</h2>
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full border-collapse text-left text-sm">
-              <thead>
-                <tr className="border-b border-border">
-                  <th className="py-2 pr-2">Metric</th>
-                  <th className="py-2 pr-2">Before</th>
-                  <th className="py-2 pr-2">After</th>
-                  <th className="py-2">Change</th>
-                </tr>
-              </thead>
-              <tbody>
-                {study.metrics.map((metric) => (
-                  <tr key={metric.label} className="border-b border-border/70">
-                    <td className="py-3 pr-2 font-semibold text-charcoal-900">{metric.label}</td>
-                    <td className="py-3 pr-2 text-slate-700">{metric.before}</td>
-                    <td className="py-3 pr-2 text-slate-700">{metric.after}</td>
-                    <td className="py-3 font-semibold text-success">{metric.delta}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <h2 className="font-sans text-2xl font-bold text-forest-900">Results</h2>
+          <ul className="mt-3 space-y-2 text-sm text-slate-700">
+            {study.results.map((result) => (
+              <li key={result}>{result}</li>
+            ))}
+          </ul>
         </article>
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
@@ -112,9 +90,9 @@ export default async function CaseStudyDetail({
         <div className="flex flex-wrap gap-3">
           <Link
             className="inline-flex items-center rounded-md bg-copper-500 px-5 py-3 text-sm font-semibold text-paper-50"
-            href="/contact"
+            href="/#free-audit"
           >
-            Get a quote
+            Request a free audit
           </Link>
           <Link
             className="inline-flex items-center rounded-md border border-border bg-white px-5 py-3 text-sm font-semibold text-charcoal-900"

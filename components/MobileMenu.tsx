@@ -36,11 +36,11 @@ export function MobileMenu() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/#free-audit"
               onClick={() => setOpen(false)}
               className="inline-flex w-fit items-center rounded-md bg-copper-500 px-4 py-2 text-sm font-semibold text-paper-50"
             >
-              Get a quote
+              Request a free audit
             </Link>
           </nav>
         </div>

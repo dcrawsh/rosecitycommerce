@@ -3,7 +3,16 @@ import { siteConfig } from "@/config/site";
 import { caseStudies } from "@/data/case-studies";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ["", "/work", "/services", "/about", "/contact", "/shopify-developer-portland"].map((path) => ({
+  const staticPages = [
+    "",
+    "/services",
+    "/work",
+    "/about",
+    "/contact",
+    "/portland-websites",
+    "/shopify-developer-portland",
+    "/portland-small-business-automation"
+  ].map((path) => ({
     url: `${siteConfig.url}${path}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,

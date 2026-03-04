@@ -1,11 +1,12 @@
 export const siteConfig = {
-  name: "Rose City Commerce",
-  tagline: "Helping Portland businesses sell online.",
+  brandName: "Rose City Commerce",
+  tagline: "Websites and digital tools for Portland businesses.",
   description:
-    "Portland ecommerce consulting for Shopify development, CRO, SEO, analytics, and performance improvements.",
+    "Rose City Commerce builds websites, ecommerce systems, and practical automations for small and medium Portland teams.",
   url: "https://rosecitycommerce.com",
-  email: "hello@rosecitycommerce.com",
   location: "Portland, OR",
+  serviceArea: ["Portland", "Beaverton", "Hillsboro", "Vancouver WA"],
+  contactEmail: "rosecitycommerce@gmail.com",
   bookingUrl: "https://cal.com/rosecitycommerce/intro",
   socials: {
     linkedin: "https://linkedin.com/in/placeholder",
@@ -14,9 +15,9 @@ export const siteConfig = {
 } as const;
 
 export const navItems = [
-  { label: "Free Audit", href: "/#free-audit" },
-  { label: "Work", href: "/work" },
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" }
 ] as const;

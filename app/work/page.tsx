@@ -8,12 +8,8 @@ import { cn } from "@/components/utils";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Portland ecommerce case studies showing Shopify, SFCC, CRO, SEO, ads, and analytics outcomes.",
-  keywords: [
-    "Portland ecommerce developer",
-    "Shopify developer Portland",
-    "Ecommerce consultant Portland"
-  ]
+    "Local and practical web, ecommerce, automation, and tracking projects for Portland-area businesses.",
+  keywords: ["Portland web developer", "Shopify developer Portland", "small business automation Portland"]
 };
 
 export default async function WorkPage({
@@ -30,8 +26,9 @@ export default async function WorkPage({
 
   return (
     <Section
-      title="Case studies"
-      intro="Proof of outcomes with practical implementation details and lessons learned."
+      titleAs="h1"
+      title="Work"
+      intro="Six sample case studies showing practical outcomes for small and medium teams in Portland and nearby cities."
     >
       <div className="mb-6 flex flex-wrap gap-2">
         <Link

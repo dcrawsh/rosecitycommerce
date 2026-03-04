@@ -1,119 +1,88 @@
+export const builtForPortlandTeams = [
+  "Home services and trades: remodelers, painters, HVAC, electricians, and landscapers that need more qualified local leads.",
+  "Professional services: law, accounting, therapy, clinics, and consultants that need clear websites and intake workflows.",
+  "Food, retail, and maker brands: coffee shops, bakeries, boutiques, and local product brands that want stronger ecommerce sales."
+] as const;
+
 export const capabilityBuckets = [
   {
-    title: "Build",
-    items: [
-      "Shopify store builds for Portland brands ready to sell online",
-      "Ecommerce site development focused on clean, maintainable storefronts",
-      "Integrations that connect your storefront, operations, and marketing tools"
-    ]
+    title: "Websites",
+    outcome:
+      "Build clear, fast websites that help people trust your business and contact you faster.",
+    deliverable: "Example deliverable: Lead-gen site with forms, scheduling, and review highlights."
   },
   {
-    title: "Optimize",
-    items: [
-      "Improve conversion with faster pages and better product layouts",
-      "Site speed improvements that reduce bounce and increase add-to-cart",
-      "UX and checkout optimization to remove purchase friction"
-    ]
+    title: "Ecommerce",
+    outcome:
+      "Launch or improve Shopify stores so customers find products quickly and complete checkout with less friction.",
+    deliverable: "Example deliverable: Shopify build or migration with merchandising and checkout fixes."
   },
   {
-    title: "Grow",
-    items: [
-      "Technical SEO improvements that increase qualified organic traffic",
-      "Google Ads support aligned to landing pages and conversion goals",
-      "Product feed optimization to improve visibility and paid efficiency"
-    ]
+    title: "Integrations & Automations",
+    outcome:
+      "Set up once and let it run: connect your tools so leads, tasks, and follow-ups move automatically.",
+    deliverable: "Example deliverable: Form -> Mailchimp/Klaviyo -> Asana/Jira task -> Slack alert."
   },
   {
-    title: "Measure",
-    items: [
-      "GA4 setup and analytics cleanup for reliable reporting",
-      "Conversion tracking that reflects real business outcomes",
-      "Dashboards your team can actually use for decision-making"
-    ]
+    title: "Growth & Measurement",
+    outcome:
+      "Improve visibility and decision-making with local SEO, cleaner tracking, and practical reporting.",
+    deliverable: "Example deliverable: GA4/GTM cleanup and dashboard tied to leads or sales."
   }
 ] as const;
 
 export const processSteps = [
   {
-    title: "Audit",
-    description:
-      "Assess storefront performance, funnel friction, and data quality to identify where revenue is leaking."
+    title: "Quick audit",
+    description: "Review your current site, tools, and bottlenecks to identify the highest-impact next move."
   },
   {
-    title: "Plan",
-    description:
-      "Prioritize opportunities by impact and effort, then align implementation with your team cadence."
+    title: "Plan + estimate",
+    description: "Translate priorities into a clear scope, timeline, and pricing before development starts."
   },
   {
-    title: "Build",
-    description:
-      "Ship technical improvements across storefront, integrations, and measurement stack with clean QA."
+    title: "Build + integrate",
+    description: "Implement the website, ecommerce updates, and automations with practical handoff documentation."
   },
   {
-    title: "Optimize",
-    description:
-      "Measure results, iterate with experiments, and scale what works across channels and templates."
+    title: "Launch + iterate",
+    description: "Ship confidently, monitor outcomes, and improve based on real lead and sales data."
   }
-] as const;
-
-type PricingPackage = {
-  name: string;
-  startingAt: string;
-  summary: string;
-  features: string[];
-  featured?: boolean;
-};
-
-export const packages: PricingPackage[] = [
-  {
-    name: "Sprint",
-    startingAt: "$3,500",
-    summary: "Focused fix for a high-impact bottleneck.",
-    features: [
-      "1 core objective",
-      "Audit + implementation",
-      "2-week turnaround",
-      "Outcome recap"
-    ]
-  },
-  {
-    name: "Growth Build",
-    startingAt: "$8,500",
-    summary: "Storefront + measurement upgrades for compounding gains.",
-    features: [
-      "Cross-functional roadmap",
-      "Dev + CRO execution",
-      "Tracking and attribution cleanup",
-      "4-6 week engagement"
-    ],
-    featured: true
-  },
-  {
-    name: "Ongoing Optimization",
-    startingAt: "$2,800/mo",
-    summary: "Monthly iteration for speed, conversion, and marketing efficiency.",
-    features: [
-      "Experiment backlog",
-      "Performance and SEO maintenance",
-      "Channel landing page support",
-      "Monthly reporting"
-    ]
-  }
-];
-
-export const trustStats = [
-  "Portland-based ecommerce consultant",
-  "Shopify + Salesforce Commerce Cloud",
-  "Senior engineer-led delivery",
-  "Fast storefronts, higher conversion, clear analytics"
 ] as const;
 
 export const platformBadges = [
   "Shopify",
   "SFCC",
-  "GA4",
+  "Next.js",
+  "Google Analytics (GA4)",
   "GTM",
   "Segment",
+  "Mailchimp",
   "Klaviyo",
+  "Asana",
+  "Jira",
+  "Slack",
   "Google Ads"
 ] as const;
+
+export const trustStats = [
+  "Portland-based support",
+  "Direct senior engineering partner",
+  "Web + ecommerce + automation",
+  "Built for small teams"
+] as const;
+
+export const packages: Array<{
+  name: string;
+  startingAt: string;
+  summary: string;
+  features: string[];
+  featured?: boolean;
+}> = [
+  {
+    name: "Starter",
+    startingAt: "$2,500",
+    summary: "Fast kickoff package",
+    features: ["Scoping", "Build", "Launch"]
+  }
+];

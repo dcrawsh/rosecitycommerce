@@ -1,42 +1,30 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
-import { services, type ServiceCategory } from "@/data/services";
+import { servicePackages } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Portland ecommerce development and growth services: Shopify development, CRO, SEO, Google Ads, analytics, and performance.",
+    "Websites, ecommerce, automations, and growth measurement support for Portland small businesses.",
   keywords: [
-    "Portland ecommerce developer",
+    "Portland web developer",
     "Shopify developer Portland",
-    "Portland Shopify expert",
-    "Ecommerce consultant Portland"
+    "small business automation Portland"
   ]
 };
-
-const groups: ServiceCategory[] = ["Build", "Optimize", "Grow", "Measure"];
 
 export default function ServicesPage() {
   return (
     <Section
+      titleAs="h1"
       title="Services"
-      intro="Outcome-focused support for Portland businesses that want better ecommerce performance."
+      intro="Four practical ways I help small and medium Portland teams launch faster, sell more, and run smoother."
     >
-      <div className="space-y-10">
-        {groups.map((group) => {
-          const groupItems = services.filter((service) => service.category === group);
-          return (
-            <section key={group}>
-              <h2 className="font-sans text-2xl font-bold text-forest-900">{group}</h2>
-              <div className="mt-4 grid gap-4 md:grid-cols-2">
-                {groupItems.map((service) => (
-                  <ServiceCard key={service.slug} service={service} />
-                ))}
-              </div>
-            </section>
-          );
-        })}
+      <div className="grid gap-5 md:grid-cols-2">
+        {servicePackages.map((service) => (
+          <ServiceCard key={service.slug} service={service} />
+        ))}
       </div>
     </Section>
   );
