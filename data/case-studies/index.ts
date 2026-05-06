@@ -2,6 +2,7 @@ import { adsTrackingFix } from "@/data/case-studies/ads";
 import { cleanStrengthShopify } from "@/data/case-studies/cleanstrength";
 import { coffeeSubscriptions } from "@/data/case-studies/coffee";
 import { contractorLeadGen } from "@/data/case-studies/contractor";
+import { eb5gRecovery } from "@/data/case-studies/eb5g";
 import { proServicesIntake } from "@/data/case-studies/proservices";
 import { retailerSpeedCRO } from "@/data/case-studies/retailer";
 import { sfccSupport } from "@/data/case-studies/sfcc";
@@ -20,12 +21,18 @@ export const caseStudyTags: CaseStudyTag[] = [
   "CRO",
   "Merchandising",
   "Subscriptions",
-  "Ecommerce Operations"
+  "Ecommerce Operations",
+  "WordPress",
+  "WP-CLI",
+  "Debugging",
+  "Infrastructure",
+  "Maintenance"
 ];
 
 export const caseStudies = [
   contractorLeadGen,
   cleanStrengthShopify,
+  eb5gRecovery,
   coffeeSubscriptions,
   retailerSpeedCRO,
   proServicesIntake,
