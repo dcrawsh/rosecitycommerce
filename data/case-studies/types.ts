@@ -9,7 +9,12 @@ export type CaseStudyTag =
   | "CRO"
   | "Merchandising"
   | "Subscriptions"
-  | "Ecommerce Operations";
+  | "Ecommerce Operations"
+  | "WordPress"
+  | "WP-CLI"
+  | "Debugging"
+  | "Infrastructure"
+  | "Maintenance";
 
 export type CaseStudy = {
   slug: string;
