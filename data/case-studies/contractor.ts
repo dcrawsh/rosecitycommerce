@@ -1,27 +1,49 @@
 import { CaseStudy } from "@/data/case-studies/types";
 
 export const contractorLeadGen: CaseStudy = {
-  slug: "portland-contractor-lead-gen-mailchimp",
-  title: "Portland contractor site with lead automation",
-  client: "Portland Contractor (anonymized)",
-  businessType: "Home services / remodeling",
-  excerpt: "Rebuilt lead-gen site and automated follow-up to reduce missed inquiries.",
-  tags: ["Websites", "Automation", "Tracking"],
+  slug: "paint-pdx-wordpress-nextjs-asana-estimates",
+  title: "Paint PDX WordPress to Next.js migration with Asana estimate flow",
+  client: "Paint PDX",
+  businessType: "Painting contractor / lead generation",
+  excerpt: "Migrated a WordPress site to a custom Next.js build and connected estimate requests to an Asana workflow.",
+  tags: ["Websites", "Automation", "SEO"],
   context:
-    "A small contractor team relied on manual inbox checks and had no clear follow-up workflow.",
+    "Paint PDX needed a faster, cleaner website and a more organized way to handle estimate requests from the site.",
   problem:
-    "Leads were coming in from multiple forms and calls, but response times were inconsistent and tracking was incomplete.",
+    "The existing WordPress site was slower than it needed to be, and estimate requests needed a clearer handoff into the team's project workflow.",
   solution: [
-    "Built a faster lead-gen website with clearer service pages and CTA hierarchy",
-    "Integrated form submissions with Mailchimp audiences",
-    "Added automated Slack alerts and task creation for new leads",
-    "Implemented basic conversion tracking for quote requests"
+    "Migrated the site from WordPress to a custom Next.js build",
+    "Rebuilt core service pages with faster loading and cleaner page structure",
+    "Connected estimate requests to an Asana flow for follow-up ownership",
+    "Improved technical SEO fundamentals across key service pages"
   ],
   results: [
-    "+41% increase in qualified form submissions",
-    "Median lead response time dropped from 19 hours to 3.5 hours",
-    "Clear weekly reporting on lead sources"
+    "Moved the site from WordPress to a faster custom Next.js build",
+    "Created a clearer estimate-request handoff into Asana",
+    "Improved measured performance and SEO scores across priority pages"
   ],
-  stack: ["Next.js", "Mailchimp", "Slack", "GA4", "GTM"],
-  image: "/images/case-trailhouse.svg"
+  metricGroups: [
+    {
+      title: "Home Page",
+      metrics: [
+        { label: "Performance Score", before: "63/100", after: "98/100", improvement: "+35 points" },
+        { label: "SEO Score", before: "77/100", after: "92/100", improvement: "+15 points" },
+        { label: "First Contentful Paint", before: "1.3s", after: "0.2s", improvement: "~6.5x faster" },
+        { label: "Largest Contentful Paint", before: "6.0s", after: "1.1s", improvement: "~5.5x faster" },
+        { label: "Speed Index", before: "12.1s", after: "0.4s", improvement: "~30x faster" }
+      ]
+    },
+    {
+      title: "Interior Paint Page",
+      metrics: [
+        { label: "Performance Score", before: "63/100", after: "99/100", improvement: "+36 points" },
+        { label: "SEO Score", before: "77/100", after: "92/100", improvement: "+15 points" },
+        { label: "First Contentful Paint", before: "1.2s", after: "0.2s", improvement: "~6x faster" },
+        { label: "Largest Contentful Paint", before: "13.9s", after: "0.5s", improvement: "~28x faster" },
+        { label: "Speed Index", before: "12.4s", after: "0.3s", improvement: "~41x faster" }
+      ]
+    }
+  ],
+  stack: ["Next.js", "Asana", "Technical SEO", "Performance"],
+  image: "/images/paint-pdx-home.png"
 };

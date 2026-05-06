@@ -6,7 +6,10 @@ export type CaseStudyTag =
   | "SEO"
   | "Ads"
   | "Tracking"
-  | "CRO";
+  | "CRO"
+  | "Merchandising"
+  | "Subscriptions"
+  | "Ecommerce Operations";
 
 export type CaseStudy = {
   slug: string;
@@ -19,6 +22,15 @@ export type CaseStudy = {
   problem: string;
   solution: string[];
   results: string[];
+  metricGroups?: Array<{
+    title: string;
+    metrics: Array<{
+      label: string;
+      before: string;
+      after: string;
+      improvement: string;
+    }>;
+  }>;
   stack: string[];
   image: string;
 };

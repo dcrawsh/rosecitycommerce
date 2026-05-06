@@ -1,4 +1,5 @@
 import { adsTrackingFix } from "@/data/case-studies/ads";
+import { cleanStrengthShopify } from "@/data/case-studies/cleanstrength";
 import { coffeeSubscriptions } from "@/data/case-studies/coffee";
 import { contractorLeadGen } from "@/data/case-studies/contractor";
 import { proServicesIntake } from "@/data/case-studies/proservices";
@@ -16,11 +17,15 @@ export const caseStudyTags: CaseStudyTag[] = [
   "SEO",
   "Ads",
   "Tracking",
-  "CRO"
+  "CRO",
+  "Merchandising",
+  "Subscriptions",
+  "Ecommerce Operations"
 ];
 
 export const caseStudies = [
   contractorLeadGen,
+  cleanStrengthShopify,
   coffeeSubscriptions,
   retailerSpeedCRO,
   proServicesIntake,

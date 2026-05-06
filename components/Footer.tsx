@@ -5,13 +5,13 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-paper-100 py-10">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 md:grid-cols-2">
-        <div>
+        <div className="w-full">
           <p className="font-sans text-lg font-bold text-forest-900">{siteConfig.brandName}</p>
-          <p className="mt-2 max-w-sm text-sm text-slate-700">{siteConfig.description}</p>
+          <p className="mt-2 text-sm text-slate-700 md:max-w-sm">{siteConfig.description}</p>
           <p className="mt-3 text-sm text-slate-700">{siteConfig.location}</p>
         </div>
-        <div className="grid gap-4 text-sm">
-          <div className="flex flex-wrap gap-4">
+        <div className="grid w-full gap-4 text-sm">
+          <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="font-semibold text-charcoal-900 hover:text-forest-900">
                 {item.label}

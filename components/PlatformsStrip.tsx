@@ -5,7 +5,7 @@ export function PlatformsStrip() {
     <section aria-label="Popular systems" className="border-b border-border bg-paper-50 py-6">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 px-5">
         <span className="mr-2 text-xs font-semibold uppercase tracking-wider text-slate-700">
-          Popular systems I work with
+          Popular systems we work with
         </span>
         {platformBadges.map((platform) => (
           <span

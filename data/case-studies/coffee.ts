@@ -2,25 +2,25 @@ import { CaseStudy } from "@/data/case-studies/types";
 
 export const coffeeSubscriptions: CaseStudy = {
   slug: "coffee-brand-shopify-subscriptions",
-  title: "Coffee brand Shopify upgrade with subscriptions",
-  client: "Portland Coffee Brand (anonymized)",
-  businessType: "Food & beverage retail",
-  excerpt: "Improved subscription flow and product merchandising for repeat sales.",
+  title: "Shopify storefront build or migration",
+  client: "Representative project category",
+  businessType: "Shopify / ecommerce",
+  excerpt: "A storefront project pattern for product discovery, merchandising, subscriptions, and checkout clarity.",
   tags: ["Shopify", "CRO", "Tracking"],
   context:
-    "A growing coffee brand had strong product demand but low subscription conversion.",
+    "Growing ecommerce brands often need a cleaner storefront when product count, apps, or merchandising needs outgrow the original theme.",
   problem:
-    "Product pages were cluttered and subscription benefits were unclear, causing lower retention and repeat revenue.",
+    "Product pages, collections, and subscription or variant flows can become confusing as the catalog and tech stack expand.",
   solution: [
-    "Reworked product templates to prioritize subscription options",
-    "Improved collection filtering and merchandising",
-    "Added clearer value messaging for recurring orders",
-    "Cleaned up subscription event tracking"
+    "Build or migrate the Shopify theme around the current catalog and buying paths",
+    "Improve product templates, variant selection, galleries, and subscription messaging",
+    "Clean up collection filtering and merchandising rules",
+    "Verify checkout, email, and analytics events before launch"
   ],
   results: [
-    "+28% lift in subscription checkout starts",
-    "+17% increase in average order value",
-    "Improved repeat purchase visibility in analytics"
+    "Platform, theme, and app stack needed",
+    "Approved before/after screenshots needed",
+    "Real launch scope and measurable outcomes needed"
   ],
   stack: ["Shopify", "Klaviyo", "GA4", "GTM"],
   image: "/images/case-lumen.svg"
