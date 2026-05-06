@@ -39,7 +39,7 @@ export default function HomePage() {
         </ul>
       </Section>
 
-      <Section id="what-i-do" title="What I do" intro="Four service buckets, each focused on clear business outcomes.">
+      <Section id="what-i-do" title="What we do" intro="Focused technical help for ecommerce teams and local businesses that need practical execution.">
         <CapabilityBuckets />
       </Section>
 
@@ -56,7 +56,7 @@ export default function HomePage() {
       <Section
         id="work-preview"
         title="Recent work"
-        intro="Local, practical projects for teams in Portland, Beaverton, Hillsboro, and Vancouver WA."
+        intro="Representative project types we can talk through without naming private clients or inventing metrics."
       >
         <CaseStudyGrid studies={caseStudies.slice(0, 3)} />
       </Section>

@@ -5,7 +5,7 @@ import { MobileMenu } from "@/components/MobileMenu";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-paper-50/95 backdrop-blur">
+    <header className="relative sticky top-0 z-50 border-b border-border bg-paper-50/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <Link href="/" className="font-sans text-base font-bold text-forest-900">
           {siteConfig.brandName}

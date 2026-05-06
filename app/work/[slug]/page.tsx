@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MetricComparison } from "@/components/MetricComparison";
 import { Section } from "@/components/Section";
 import { getCaseStudyBySlug } from "@/data/case-studies";
 
@@ -36,10 +37,10 @@ export default async function CaseStudyDetail({
   }
 
   return (
-    <Section titleAs="h1" title={study.title} intro={study.excerpt}>
+    <Section compactTop titleAs="h1" title={study.title} intro={study.excerpt}>
       <div className="grid gap-8">
         <Image
-          alt={`${study.client} screenshot placeholder`}
+          alt={`${study.client} website screenshot`}
           className="h-auto w-full rounded-lg border border-border bg-white"
           height={540}
           priority
@@ -75,6 +76,8 @@ export default async function CaseStudyDetail({
             ))}
           </ul>
         </article>
+
+        {study.metricGroups ? <MetricComparison groups={study.metricGroups} /> : null}
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
           <h2 className="font-sans text-2xl font-bold text-forest-900">Stack</h2>

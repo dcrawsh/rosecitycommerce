@@ -15,7 +15,7 @@ export default function PortlandWebsitesPage() {
 
   return (
     <>
-      <Section titleAs="h1" title={copy.title} intro={copy.intro}>
+      <Section compactTop titleAs="h1" title={copy.title} intro={copy.intro}>
         <div className="rounded-lg border border-border bg-white p-6 shadow-sm text-sm leading-relaxed text-slate-700">
           {copy.body}
         </div>

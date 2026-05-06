@@ -7,14 +7,26 @@ type SectionProps = {
   intro?: string;
   children: ReactNode;
   className?: string;
+  compactTop?: boolean;
   titleAs?: "h1" | "h2" | "h3";
 };
 
-export function Section({ id, title, intro, children, className, titleAs = "h2" }: SectionProps) {
+export function Section({
+  id,
+  title,
+  intro,
+  children,
+  className,
+  compactTop = false,
+  titleAs = "h2"
+}: SectionProps) {
   const Heading = titleAs;
 
   return (
-    <section className={cn("py-16 md:py-20", className)} id={id}>
+    <section
+      className={cn(compactTop ? "pb-16 pt-10 md:pb-20 md:pt-12" : "py-16 md:py-20", className)}
+      id={id}
+    >
       <div className="mx-auto max-w-6xl px-5">
         {(title || intro) && (
           <div className="mb-8 max-w-3xl md:mb-10">

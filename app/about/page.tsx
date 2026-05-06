@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Section titleAs="h1" title="About" intro={aboutCopy.intro}>
+      <Section compactTop titleAs="h1" title="About" intro={aboutCopy.intro}>
         <div className="grid gap-5 md:grid-cols-2">
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
             <h2 className="font-sans text-2xl font-bold text-forest-900">How I work</h2>

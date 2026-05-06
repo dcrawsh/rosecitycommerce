@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <Section titleAs="h1" title="Contact" intro={contactCopy.intro}>
+    <Section compactTop titleAs="h1" title="Contact" intro={contactCopy.intro}>
       <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
         <ContactForm />
         <aside className="rounded-lg border border-border bg-white p-6 shadow-sm">

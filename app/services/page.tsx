@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <Section
+      compactTop
       titleAs="h1"
       title="Services"
       intro="Four practical ways I help small and medium Portland teams launch faster, sell more, and run smoother."

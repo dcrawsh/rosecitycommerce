@@ -8,7 +8,7 @@ export function CaseStudyGrid({ studies }: { studies: CaseStudy[] }) {
       {studies.map((study) => (
         <article key={study.slug} className="overflow-hidden rounded-lg border border-border bg-white shadow-sm">
           <Image
-            alt={`${study.client} case study placeholder preview`}
+            alt={`${study.title} preview`}
             className="h-44 w-full border-b border-border object-cover"
             height={320}
             src={study.image}

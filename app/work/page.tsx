@@ -26,6 +26,7 @@ export default async function WorkPage({
 
   return (
     <Section
+      compactTop
       titleAs="h1"
       title="Work"
       intro="Six sample case studies showing practical outcomes for small and medium teams in Portland and nearby cities."

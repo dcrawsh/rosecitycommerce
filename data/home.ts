@@ -6,28 +6,28 @@ export const builtForPortlandTeams = [
 
 export const capabilityBuckets = [
   {
-    title: "Websites",
+    title: "Storefronts",
     outcome:
-      "Build clear, fast websites that help people trust your business and contact you faster.",
-    deliverable: "Example deliverable: Lead-gen site with forms, scheduling, and review highlights."
+      "Build or improve Shopify storefronts so customers can browse products, understand options, and check out without friction.",
+    deliverable: "Typical work: Shopify builds, migrations, theme updates, PDPs, collections, and product galleries."
   },
   {
-    title: "Ecommerce",
+    title: "Performance",
     outcome:
-      "Launch or improve Shopify stores so customers find products quickly and complete checkout with less friction.",
-    deliverable: "Example deliverable: Shopify build or migration with merchandising and checkout fixes."
+      "Tighten slow or messy ecommerce experiences by removing bottlenecks in themes, scripts, images, and templates.",
+    deliverable: "Typical work: Core Web Vitals cleanup, mobile PDP fixes, app/script audits, and analytics checks."
   },
   {
-    title: "Integrations & Automations",
+    title: "Product Data",
     outcome:
-      "Set up once and let it run: connect your tools so leads, tasks, and follow-ups move automatically.",
-    deliverable: "Example deliverable: Form -> Mailchimp/Klaviyo -> Asana/Jira task -> Slack alert."
+      "Organize product information so catalogs, metafields, feeds, and internal tools stay easier to manage.",
+    deliverable: "Typical work: metafield planning, product imports, sync tooling, feed cleanup, and admin workflows."
   },
   {
-    title: "Growth & Measurement",
+    title: "Websites & Automation",
     outcome:
-      "Improve visibility and decision-making with local SEO, cleaner tracking, and practical reporting.",
-    deliverable: "Example deliverable: GA4/GTM cleanup and dashboard tied to leads or sales."
+      "Rebuild small business websites and connect forms, email, task systems, and notifications around the way the team works.",
+    deliverable: "Typical work: WordPress to Next.js migrations, lead-gen sites, form routing, and Slack/Asana alerts."
   }
 ] as const;
 
@@ -67,7 +67,7 @@ export const platformBadges = [
 
 export const trustStats = [
   "Portland-based support",
-  "Direct senior engineering partner",
+  "Direct two-person team",
   "Web + ecommerce + automation",
   "Built for small teams"
 ] as const;
