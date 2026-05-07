@@ -20,7 +20,7 @@ export default function ServicesPage() {
       compactTop
       titleAs="h1"
       title="Services"
-      intro="Four practical ways I help small and medium Portland teams launch faster, sell more, and run smoother."
+      intro="Four practical ways we help small and medium Portland teams launch faster, sell more, and run smoother."
     >
       <div className="grid gap-5 md:grid-cols-2">
         {servicePackages.map((service) => (

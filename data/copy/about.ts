@@ -1,14 +1,40 @@
 export const aboutCopy = {
+  headline: "Small Portland team. Practical ecommerce and web systems.",
   intro:
-    "I’m a senior eCommerce developer based in Portland. Rose City Commerce is small and home-grown, and you work directly with me from start to finish.",
+    "We’re a small Portland-based web and ecommerce studio focused on building practical systems for growing businesses.",
+  background: [
+    "Before starting Rose City Commerce, we worked across ecommerce engineering teams supporting brands including Fender, PreSonus, Jackson, and Leatherman, alongside independent local businesses, ecommerce brands, and creative platforms.",
+    "Today we help businesses build and maintain Shopify storefronts, websites, integrations, and internal workflows without unnecessary complexity."
+  ],
   howIWork: [
-    "I help small and medium businesses build practical digital systems: websites that convert, Shopify stores that sell, and automations that reduce manual work.",
-    "Core focus areas: Shopify, Salesforce Commerce Cloud support, CRO, analytics, technical SEO, and performance."
+    "We focus on practical improvements that help businesses operate more smoothly, whether that’s improving a storefront experience, simplifying content management, increasing site speed, or reducing manual work through automation.",
+    "We prefer clear communication, maintainable systems, and long-term relationships over oversized scopes and complicated process."
+  ],
+  focusAreas: [
+    "Shopify development",
+    "Ecommerce UX and storefront customization",
+    "Website performance and technical SEO",
+    "Product data and integrations",
+    "WordPress and Next.js websites",
+    "Automation and internal tooling",
+    "Ongoing maintenance and support"
   ],
   values: [
-    { title: "Clarity", description: "Clear priorities, plain language, and honest tradeoffs." },
-    { title: "Speed", description: "Ship meaningful improvements quickly without creating long-term mess." },
-    { title: "Measurable outcomes", description: "Focus on leads, sales, and clean tracking you can trust." },
-    { title: "Clean handoff", description: "Documented setups your team can run after launch." }
+    {
+      title: "Clarity",
+      description: "Clear priorities, realistic recommendations, and straightforward communication."
+    },
+    {
+      title: "Practical speed",
+      description: "Move quickly where it matters without creating technical debt that causes problems later."
+    },
+    {
+      title: "Maintainable systems",
+      description: "Build setups that clients can realistically maintain and grow over time."
+    },
+    {
+      title: "Long-term thinking",
+      description: "We prefer durable solutions and ongoing relationships over quick one-off work."
+    }
   ]
 } as const;

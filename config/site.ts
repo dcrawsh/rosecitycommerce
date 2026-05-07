@@ -2,7 +2,7 @@ export const siteConfig = {
   brandName: "Rose City Commerce",
   tagline: "Websites and digital tools for Portland businesses.",
   description:
-    "Rose City Commerce builds websites, ecommerce systems, and practical automations for small and medium Portland teams.",
+    "Rose City Commerce builds ecommerce storefronts, websites, and practical digital systems for businesses and creative teams in Portland and beyond.",
   url: "https://rosecitycommerce.com",
   location: "Portland, OR",
   serviceArea: ["Portland", "Beaverton", "Hillsboro", "Vancouver WA"],

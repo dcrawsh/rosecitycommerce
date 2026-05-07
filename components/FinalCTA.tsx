@@ -5,7 +5,7 @@ export function FinalCTA() {
     <div className="rounded-lg border border-border bg-forest-900 p-8 text-paper-50 shadow-md md:p-10">
       <h2 className="font-sans text-3xl font-bold">Need a digital partner for your next build?</h2>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-paper-50/90">
-        You work directly with me. No layers, no handoffs, no bloated process.
+        You work directly with us. Small team, clear communication, and practical next steps.
       </p>
       <div className="mt-6 flex flex-wrap gap-3">
         <Button href="/#free-audit" variant="secondary">

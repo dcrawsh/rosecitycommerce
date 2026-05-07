@@ -6,17 +6,22 @@ import { aboutCopy } from "@/data/copy/about";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "I am a senior eCommerce developer based in Portland helping small teams with websites, Shopify, automations, and tracking.",
+    "Rose City Commerce is a small Portland web and ecommerce studio building Shopify storefronts, websites, integrations, and practical digital systems.",
   keywords: ["Portland web developer", "Shopify developer Portland", "small business automation Portland"]
 };
 
 export default function AboutPage() {
   return (
     <>
-      <Section compactTop titleAs="h1" title="About" intro={aboutCopy.intro}>
+      <Section compactTop titleAs="h1" title={aboutCopy.headline} intro={aboutCopy.intro}>
+        <div className="mb-5 max-w-3xl space-y-3 text-sm leading-relaxed text-slate-700">
+          {aboutCopy.background.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
         <div className="grid gap-5 md:grid-cols-2">
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-2xl font-bold text-forest-900">How I work</h2>
+            <h2 className="font-sans text-2xl font-bold text-forest-900">How we work</h2>
             {aboutCopy.howIWork.map((paragraph) => (
               <p key={paragraph} className="mt-3 text-sm leading-relaxed text-slate-700">
                 {paragraph}
@@ -24,10 +29,12 @@ export default function AboutPage() {
             ))}
           </article>
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-2xl font-bold text-forest-900">Photo placeholder</h2>
-            <div className="mt-3 flex h-48 items-center justify-center rounded-md border border-dashed border-border bg-paper-100 text-sm text-slate-700">
-              Founder photo placeholder
-            </div>
+            <h2 className="font-sans text-2xl font-bold text-forest-900">Core focus areas</h2>
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700">
+              {aboutCopy.focusAreas.map((area) => (
+                <li key={area}>{area}</li>
+              ))}
+            </ul>
           </article>
         </div>
       </Section>
@@ -45,9 +52,9 @@ export default function AboutPage() {
 
       <Section>
         <div className="rounded-lg border border-border bg-forest-900 p-8 text-paper-50">
-          <h2 className="font-sans text-3xl font-bold">Want to talk through your next project?</h2>
+          <h2 className="font-sans text-3xl font-bold">Want to talk through a project?</h2>
           <p className="mt-3 text-sm text-paper-50/90">
-            Send your site and goals. I will give you a practical recommendation.
+            Send us your site, goals, or current pain points and we’ll give you a practical recommendation.
           </p>
           <div className="mt-6">
             <Button href="/#free-audit" variant="secondary">
