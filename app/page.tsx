@@ -38,7 +38,7 @@ export default function HomePage() {
           ))}
         </ul>
         <p className="mt-4 text-sm leading-relaxed text-slate-700">
-          Recent work includes Paint PDX, Taco Machine PDX, Clean Strength, EB5G, and Upper Left Indie.
+          Recent work includes Portland Painting and Restoration, Taco Machine PDX, Clean Strength, EB5G, and Upper Left Indie.
         </p>
       </Section>
 
