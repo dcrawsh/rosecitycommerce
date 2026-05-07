@@ -8,6 +8,7 @@ export function Footer() {
         <div className="w-full">
           <p className="font-sans text-lg font-bold text-forest-900">{siteConfig.brandName}</p>
           <p className="mt-2 text-sm text-slate-700 md:max-w-sm">{siteConfig.description}</p>
+          <p className="mt-3 text-sm font-semibold text-forest-900">Small Portland team. Direct developer contact.</p>
           <p className="mt-3 text-sm text-slate-700">{siteConfig.location}</p>
         </div>
         <div className="grid w-full gap-4 text-sm">

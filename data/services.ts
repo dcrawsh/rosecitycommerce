@@ -1,6 +1,6 @@
 export type ServicePackage = {
   slug: string;
-  title: "Launch" | "Sell" | "Automate" | "Optimize";
+  title: "Websites" | "Shopify" | "Automation" | "Performance & SEO";
   summary: string;
   idealFor: string;
   timeline: string;
@@ -11,7 +11,7 @@ export type ServicePackage = {
 export const servicePackages: ServicePackage[] = [
   {
     slug: "launch",
-    title: "Launch",
+    title: "Websites",
     summary: "Website and landing page builds focused on lead generation and trust.",
     idealFor: "Local teams that need a modern web presence that turns visitors into inquiries.",
     timeline: "2-4 weeks",
@@ -24,7 +24,7 @@ export const servicePackages: ServicePackage[] = [
   },
   {
     slug: "sell",
-    title: "Sell",
+    title: "Shopify",
     summary: "Shopify builds, migrations, and conversion-focused ecommerce improvements.",
     idealFor: "Brands ready to improve online sales without overcomplicating their stack.",
     timeline: "3-8 weeks",
@@ -37,7 +37,7 @@ export const servicePackages: ServicePackage[] = [
   },
   {
     slug: "automate",
-    title: "Automate",
+    title: "Automation",
     summary: "Connect your tools once so lead routing and team workflows run automatically.",
     idealFor: "Small teams losing time to repetitive manual follow-up and handoff tasks.",
     timeline: "1-3 weeks",
@@ -50,7 +50,7 @@ export const servicePackages: ServicePackage[] = [
   },
   {
     slug: "optimize",
-    title: "Optimize",
+    title: "Performance & SEO",
     summary: "Improve traffic quality, conversion confidence, and reporting clarity.",
     idealFor: "Teams that want better SEO and cleaner measurement before scaling spend.",
     timeline: "2-6 weeks",

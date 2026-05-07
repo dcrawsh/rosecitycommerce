@@ -28,7 +28,7 @@ export default function ContactPage() {
           </a>
 
           <div className="mt-6 rounded-md bg-paper-100 p-4 text-sm text-slate-700">
-            <p className="font-semibold text-forest-900">What helps me scope quickly:</p>
+            <p className="font-semibold text-forest-900">What helps us scope quickly:</p>
             <ul className="mt-2 space-y-2">
               {contactCopy.scopeTips.map((item) => (
                 <li key={item}>{item}</li>

@@ -7,6 +7,8 @@ export const upperLeftIndiePlatform: CaseStudy = {
   businessType: "MEDIA PLATFORM / MUSIC / WEB EXPERIENCE",
   excerpt:
     "Built and maintained an independent Pacific Northwest music platform focused on artist discovery, playlists, and editorial content.",
+  impactSummary:
+    "This project mattered because the platform needed to feel like a real regional music product, not a generic blog wrapped around playlist links.",
   tags: ["Next.js", "Content", "Music", "Editorial", "Branding"],
   context:
     "Upper Left Indie was created as a platform focused on Pacific Northwest music discovery, independent artists, playlists, and regional music culture.",
@@ -27,5 +29,6 @@ export const upperLeftIndiePlatform: CaseStudy = {
     "Created a platform capable of growing with new artists and content over time"
   ],
   stack: ["Next.js", "Frontend development", "Content architecture", "Editorial UX", "Branding"],
-  image: "/images/upper-left-indie-home.png"
+  image: "/images/upper-left-indie-home.png",
+  imagePosition: "top"
 };

@@ -37,6 +37,9 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
+        <p className="mt-4 text-sm leading-relaxed text-slate-700">
+          Recent work includes Paint PDX, Taco Machine PDX, Clean Strength, EB5G, and Upper Left Indie.
+        </p>
       </Section>
 
       <Section id="what-i-do" title="What we do" intro="Focused technical help for ecommerce teams and local businesses that need practical execution.">
@@ -56,7 +59,7 @@ export default function HomePage() {
       <Section
         id="work-preview"
         title="Recent work"
-        intro="Representative project types we can talk through without naming private clients or inventing metrics."
+        intro="Recent projects across Shopify, WordPress recovery, bilingual local websites, owned ecommerce, and independent media platforms."
       >
         <CaseStudyGrid studies={caseStudies.slice(0, 3)} />
       </Section>

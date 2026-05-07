@@ -4,10 +4,11 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, website, needs, honeypot } = body as {
+    const { name, email, website, projectType, needs, honeypot } = body as {
       name?: string;
       email?: string;
       website?: string;
+      projectType?: string;
       needs?: string;
       honeypot?: string;
     };
@@ -16,7 +17,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true });
     }
 
-    if (!name || !email || !website || !needs) {
+    if (!name || !email || !website || !projectType || !needs) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
@@ -38,7 +39,14 @@ export async function POST(request: Request) {
       to,
       subject: `Contact Form Inquiry: ${name}`,
       replyTo: email,
-      text: [`Name: ${name}`, `Email: ${email}`, `Website: ${website}`, "Goals:", needs].join("\n")
+      text: [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Website: ${website}`,
+        `Project type: ${projectType}`,
+        "Goals:",
+        needs
+      ].join("\n")
     });
 
     const debugEnabled =
