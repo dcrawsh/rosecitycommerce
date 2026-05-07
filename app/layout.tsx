@@ -4,7 +4,6 @@ import "./globals.css";
 import { siteConfig } from "@/config/site";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { MobileBookCall } from "@/components/MobileBookCall";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -65,7 +64,6 @@ export default function RootLayout({
         <Header />
         <main id="main">{children}</main>
         <Footer />
-        <MobileBookCall />
       </body>
     </html>
   );

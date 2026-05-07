@@ -29,7 +29,7 @@ export default async function WorkPage({
       compactTop
       titleAs="h1"
       title="Work"
-      intro="Real projects across ecommerce, WordPress recovery, local business websites, and owned web products."
+      intro="Real projects across ecommerce, local business websites, owned web products, and practical technical support."
     >
       <div className="mb-6 flex flex-wrap gap-2">
         <Link

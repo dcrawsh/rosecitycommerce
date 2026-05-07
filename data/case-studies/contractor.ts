@@ -2,15 +2,15 @@ import { CaseStudy } from "@/data/case-studies/types";
 
 export const contractorLeadGen: CaseStudy = {
   slug: "paint-pdx-wordpress-nextjs-asana-estimates",
-  title: "Paint PDX WordPress to Next.js migration with Asana estimate flow",
-  client: "Paint PDX",
+  title: "Portland Painting and Restoration WordPress to Next.js migration with Asana estimate flow",
+  client: "Portland Painting and Restoration",
   businessType: "Painting contractor / lead generation",
   excerpt: "Migrated a WordPress site to a custom Next.js build and connected estimate requests to an Asana workflow.",
   impactSummary:
-    "This project mattered because Paint PDX needed a faster site customers could use easily and a clearer estimate flow the team could manage without chasing every lead manually.",
-  tags: ["Websites", "Automation", "SEO"],
+    "This project mattered because Portland Painting and Restoration needed a faster site customers could use easily and a clearer estimate flow the team could manage without chasing every lead manually.",
+  tags: ["Websites", "Automation", "SEO", "Next.js", "WordPress"],
   context:
-    "Paint PDX needed a faster, cleaner website and a more organized way to handle estimate requests from the site.",
+    "Portland Painting and Restoration needed a faster, cleaner website for paintpdx.com and a more organized way to handle estimate requests from the site.",
   problem:
     "The existing WordPress site was slower than it needed to be, and estimate requests needed a clearer handoff into the team's project workflow.",
   solution: [
