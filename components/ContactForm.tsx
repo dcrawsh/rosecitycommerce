@@ -70,7 +70,7 @@ export function ContactForm() {
       <div className="rounded-lg border border-success/30 bg-white p-6 shadow-sm">
         <h3 className="font-sans text-xl font-bold text-forest-900">Thanks, your message is in.</h3>
         <p className="mt-2 text-sm text-slate-700">
-          I reply within 2 business days. If I am not a fit, I will say so.
+          We reply within 2 business days. If we are not a fit, we will say so.
         </p>
       </div>
     );

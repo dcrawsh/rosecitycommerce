@@ -95,7 +95,7 @@ export function FreeAuditSection() {
             <div className="rounded-md border border-success/35 bg-white p-5 shadow-sm">
               <p className="text-sm font-semibold text-forest-900">Thanks, your audit request is in.</p>
               <p className="mt-2 text-sm text-slate-700">
-                I reply within 2 business days with next steps and whether I am a good fit.
+                We reply within 2 business days with next steps and whether we are a good fit.
               </p>
             </div>
           ) : (
