@@ -9,9 +9,10 @@ export function CaseStudyGrid({ studies }: { studies: CaseStudy[] }) {
         <article key={study.slug} className="overflow-hidden rounded-lg border border-border bg-white shadow-sm">
           <Image
             alt={`${study.title} preview`}
-            className="h-44 w-full border-b border-border object-cover"
+            className="aspect-[16/10] h-auto w-full border-b border-border object-cover"
             height={320}
             src={study.image}
+            style={{ objectPosition: study.imagePosition ?? "center" }}
             width={640}
           />
           <div className="p-5">

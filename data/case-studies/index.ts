@@ -12,22 +12,10 @@ export const caseStudyTags: CaseStudyTag[] = [
   "Shopify",
   "Automation",
   "SEO",
-  "Merchandising",
-  "Subscriptions",
-  "Ecommerce Operations",
   "WordPress",
-  "WP-CLI",
-  "Debugging",
-  "Infrastructure",
-  "Maintenance",
   "Next.js",
   "Content",
-  "Music",
-  "Editorial",
-  "Branding",
-  "Localization",
-  "Small Business",
-  "Responsive Design"
+  "Small Business"
 ];
 
 export const caseStudies = [

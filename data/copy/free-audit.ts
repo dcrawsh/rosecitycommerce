@@ -1,8 +1,8 @@
 export const freeAuditCopy = {
-  eyebrow: "Free 5-minute audit",
-  title: "Free 5-minute audit",
+  eyebrow: "Free quick site review",
+  title: "Free quick site review",
   description:
-    "Send your website and we will review it quickly for speed, conversion, SEO, and automation opportunities you can act on.",
+    "Send your website and we will review it for speed, conversion, SEO, and automation opportunities you can act on.",
   bullets: [
     "Top conversion or lead-flow blockers",
     "Quick speed and technical SEO check",

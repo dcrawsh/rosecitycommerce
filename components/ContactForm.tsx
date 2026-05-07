@@ -6,6 +6,7 @@ type FormState = {
   name: string;
   email: string;
   website: string;
+  projectType: "Shopify" | "Website" | "WordPress help" | "Automation" | "Performance" | "Not sure" | "";
   needs: string;
   honeypot: string;
 };
@@ -14,6 +15,7 @@ const initialState: FormState = {
   name: "",
   email: "",
   website: "",
+  projectType: "",
   needs: "",
   honeypot: ""
 };
@@ -32,7 +34,7 @@ export function ContactForm() {
       return;
     }
 
-    if (!form.name || !form.email || !form.website || !form.needs) {
+    if (!form.name || !form.email || !form.website || !form.projectType || !form.needs) {
       setError("Please complete all required fields.");
       return;
     }
@@ -111,6 +113,26 @@ export function ContactForm() {
           type="url"
           value={form.website}
         />
+      </label>
+
+      <label className="text-sm font-semibold text-charcoal-900">
+        Project type *
+        <select
+          className="mt-1 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-charcoal-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500"
+          onChange={(event) =>
+            setForm((state) => ({ ...state, projectType: event.target.value as FormState["projectType"] }))
+          }
+          required
+          value={form.projectType}
+        >
+          <option value="">Select</option>
+          <option>Shopify</option>
+          <option>Website</option>
+          <option>WordPress help</option>
+          <option>Automation</option>
+          <option>Performance</option>
+          <option>Not sure</option>
+        </select>
       </label>
 
       <label className="text-sm font-semibold text-charcoal-900">

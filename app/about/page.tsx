@@ -37,6 +37,14 @@ export default function AboutPage() {
             </ul>
           </article>
         </div>
+        <div className="mt-5 grid gap-5 md:grid-cols-2">
+          {aboutCopy.whoYouWorkWith.map((item) => (
+            <article key={item.title} className="rounded-lg border border-border bg-paper-100 p-6 shadow-sm">
+              <h2 className="font-sans text-xl font-bold text-forest-900">{item.title}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-slate-700">{item.description}</p>
+            </article>
+          ))}
+        </div>
       </Section>
 
       <Section title="Values">

@@ -7,6 +7,8 @@ export const eb5gRecovery: CaseStudy = {
   businessType: "WEBSITE RECOVERY / WORDPRESS",
   excerpt:
     "Recovered a broken WordPress site after failed core/plugin updates by rolling back the environment, isolating plugin conflicts, and restoring site/admin functionality.",
+  impactSummary:
+    "This was a recovery project where the priority was restoring production access and admin usability without forcing a full rebuild.",
   tags: ["WordPress", "WP-CLI", "Debugging", "Infrastructure", "Maintenance"],
   context:
     "EB5G experienced a production outage after internal staff updated WordPress core and multiple plugins simultaneously on a site running a custom theme.",
@@ -29,5 +31,6 @@ export const eb5gRecovery: CaseStudy = {
     "Reduced future update risk through safer plugin management practices"
   ],
   stack: ["WordPress", "WP-CLI", "SSH", "PHP", "Plugin debugging", "Production recovery"],
-  image: "/images/eb5g-projects.png"
+  image: "/images/eb5g-projects.png",
+  imagePosition: "top"
 };

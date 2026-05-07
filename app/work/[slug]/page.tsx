@@ -48,6 +48,12 @@ export default async function CaseStudyDetail({
           width={1200}
         />
 
+        {study.impactSummary ? (
+          <div className="rounded-lg border border-copper-500/30 bg-paper-100 p-5 text-sm font-medium leading-relaxed text-charcoal-900">
+            {study.impactSummary}
+          </div>
+        ) : null}
+
         <div className="grid gap-6 md:grid-cols-2">
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
             <h2 className="font-sans text-xl font-bold text-forest-900">Context</h2>
@@ -68,6 +74,8 @@ export default async function CaseStudyDetail({
           </ul>
         </article>
 
+        {study.metricGroups ? <MetricComparison groups={study.metricGroups} /> : null}
+
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
           <h2 className="font-sans text-2xl font-bold text-forest-900">Results</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-700">
@@ -76,8 +84,6 @@ export default async function CaseStudyDetail({
             ))}
           </ul>
         </article>
-
-        {study.metricGroups ? <MetricComparison groups={study.metricGroups} /> : null}
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
           <h2 className="font-sans text-2xl font-bold text-forest-900">Stack</h2>

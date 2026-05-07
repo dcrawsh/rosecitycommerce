@@ -1,12 +1,8 @@
 export type CaseStudyTag =
   | "Websites"
   | "Shopify"
-  | "SFCC"
   | "Automation"
   | "SEO"
-  | "Ads"
-  | "Tracking"
-  | "CRO"
   | "Merchandising"
   | "Subscriptions"
   | "Ecommerce Operations"
@@ -30,6 +26,7 @@ export type CaseStudy = {
   client: string;
   businessType: string;
   excerpt: string;
+  impactSummary?: string;
   tags: CaseStudyTag[];
   context: string;
   problem: string;
@@ -46,4 +43,5 @@ export type CaseStudy = {
   }>;
   stack: string[];
   image: string;
+  imagePosition?: string;
 };

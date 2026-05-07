@@ -19,6 +19,18 @@ export const aboutCopy = {
     "Automation and internal tooling",
     "Ongoing maintenance and support"
   ],
+  whoYouWorkWith: [
+    {
+      title: "Two experienced developers",
+      description:
+        "You work directly with the people scoping the project, writing the code, and supporting the work after launch."
+    },
+    {
+      title: "Small-team communication",
+      description:
+        "We keep project conversations practical, direct, and close to the actual decisions that need to be made."
+    }
+  ],
   values: [
     {
       title: "Clarity",

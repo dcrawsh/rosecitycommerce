@@ -7,10 +7,10 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl px-5">
         <div className="max-w-3xl">
           <h1 className="text-balance font-sans text-4xl font-extrabold tracking-tight text-forest-900 md:text-6xl">
-            Practical ecommerce and web development for small businesses.
+            Shopify, websites, and workflow fixes for small teams.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">
-            We help Portland-area teams improve Shopify stores, rebuild aging websites,
+            We help Portland-area businesses improve storefronts, rebuild aging sites,
             clean up product data, and connect the tools that keep orders and leads moving.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

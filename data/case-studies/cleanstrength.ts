@@ -7,6 +7,8 @@ export const cleanStrengthShopify: CaseStudy = {
   businessType: "OWNED ECOMMERCE BRAND / SHOPIFY",
   excerpt:
     "Managed and customized a Shopify storefront for a supplement brand, including theme updates, product merchandising, subscriptions, and ongoing ecommerce operations.",
+  impactSummary:
+    "This owned ecommerce brand gave us direct operating experience with the day-to-day Shopify decisions that affect merchandising, subscriptions, product setup, and customer-facing content.",
   tags: ["Shopify", "Merchandising", "Subscriptions", "Ecommerce Operations"],
   context:
     "Clean Strength needed a flexible Shopify storefront to support supplement product sales, recurring subscriptions, product merchandising, and ongoing storefront updates.",
@@ -35,5 +37,6 @@ export const cleanStrengthShopify: CaseStudy = {
     "Product merchandising",
     "Ecommerce operations"
   ],
-  image: "/images/clean-strength-home.png"
+  image: "/images/clean-strength-home.png",
+  imagePosition: "top"
 };

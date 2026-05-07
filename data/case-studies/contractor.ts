@@ -6,6 +6,8 @@ export const contractorLeadGen: CaseStudy = {
   client: "Paint PDX",
   businessType: "Painting contractor / lead generation",
   excerpt: "Migrated a WordPress site to a custom Next.js build and connected estimate requests to an Asana workflow.",
+  impactSummary:
+    "This project mattered because Paint PDX needed a faster site customers could use easily and a clearer estimate flow the team could manage without chasing every lead manually.",
   tags: ["Websites", "Automation", "SEO"],
   context:
     "Paint PDX needed a faster, cleaner website and a more organized way to handle estimate requests from the site.",
@@ -45,5 +47,6 @@ export const contractorLeadGen: CaseStudy = {
     }
   ],
   stack: ["Next.js", "Asana", "Technical SEO", "Performance"],
-  image: "/images/paint-pdx-home.png"
+  image: "/images/paint-pdx-home.png",
+  imagePosition: "top"
 };

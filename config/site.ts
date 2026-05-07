@@ -7,11 +7,7 @@ export const siteConfig = {
   location: "Portland, OR",
   serviceArea: ["Portland", "Beaverton", "Hillsboro", "Vancouver WA"],
   contactEmail: "rosecitycommerce@gmail.com",
-  bookingUrl: "https://cal.com/rosecitycommerce/intro",
-  socials: {
-    linkedin: "https://linkedin.com/in/placeholder",
-    github: "https://github.com/placeholder"
-  }
+  bookingUrl: "https://cal.com/rosecitycommerce/intro"
 } as const;
 
 export const navItems = [
