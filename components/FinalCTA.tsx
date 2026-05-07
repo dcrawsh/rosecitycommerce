@@ -11,7 +11,7 @@ export function FinalCTA() {
         <Button href="/#free-audit" variant="secondary">
           Request free audit
         </Button>
-        <Button href="/work" variant="ghost" className="border-paper-50/40 bg-transparent text-paper-50 hover:bg-paper-50/10">
+        <Button href="/work" variant="primary" className="border-paper-50/40 bg-transparent text-paper-50 hover:bg-paper-50/10">
           See work
         </Button>
       </div>
