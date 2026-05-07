@@ -14,7 +14,15 @@ export type CaseStudyTag =
   | "WP-CLI"
   | "Debugging"
   | "Infrastructure"
-  | "Maintenance";
+  | "Maintenance"
+  | "Next.js"
+  | "Content"
+  | "Music"
+  | "Editorial"
+  | "Branding"
+  | "Localization"
+  | "Small Business"
+  | "Responsive Design";
 
 export type CaseStudy = {
   slug: string;
