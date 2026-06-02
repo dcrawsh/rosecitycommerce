@@ -4,6 +4,7 @@ import { eb5gRecovery } from "@/data/case-studies/eb5g";
 import { fenderPdpMediaGallery } from "@/data/case-studies/fender-gallery";
 import { fenderPerformanceOptimization } from "@/data/case-studies/fender-performance";
 import { fenderProductSyncPlatform } from "@/data/case-studies/fender-product-sync";
+import { softArcadeGames } from "@/data/case-studies/soft-arcade-games";
 import { tacoMachineBilingualSite } from "@/data/case-studies/tacomachine";
 import { upperLeftIndiePlatform } from "@/data/case-studies/upperleftindie";
 import { CaseStudyTag } from "@/data/case-studies/types";
@@ -16,6 +17,10 @@ export const caseStudyTags: CaseStudyTag[] = [
   "Automation",
   "React",
   "Performance",
+  "PostHog",
+  "Product Analytics",
+  "Browser Gaming",
+  "Cloudflare",
   "SEO",
   "WordPress",
   "Next.js",
@@ -24,13 +29,14 @@ export const caseStudyTags: CaseStudyTag[] = [
 ];
 
 export const caseStudies = [
-  fenderPdpMediaGallery,
+  softArcadeGames,
   fenderProductSyncPlatform,
-  fenderPerformanceOptimization,
   contractorLeadGen,
+  fenderPerformanceOptimization,
+  upperLeftIndiePlatform,
+  fenderPdpMediaGallery,
   cleanStrengthShopify,
   eb5gRecovery,
-  upperLeftIndiePlatform,
   tacoMachineBilingualSite
 ];
 

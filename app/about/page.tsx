@@ -6,7 +6,7 @@ import { aboutCopy } from "@/data/copy/about";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Rose City Commerce is a small Portland web and ecommerce studio building Shopify storefronts, websites, integrations, and practical digital systems.",
+    "Rose City Commerce is owned and operated by Liam Crawshaw, a Portland-based ecommerce engineer building Shopify storefronts, websites, integrations, and internal tools.",
   keywords: ["Portland web developer", "Shopify developer Portland", "small business automation Portland"]
 };
 
@@ -21,7 +21,7 @@ export default function AboutPage() {
         </div>
         <div className="grid gap-5 md:grid-cols-2">
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-2xl font-bold text-forest-900">How we work</h2>
+            <h2 className="font-sans text-2xl font-bold text-forest-900">How I Work</h2>
             {aboutCopy.howIWork.map((paragraph) => (
               <p key={paragraph} className="mt-3 text-sm leading-relaxed text-slate-700">
                 {paragraph}
@@ -29,7 +29,7 @@ export default function AboutPage() {
             ))}
           </article>
           <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-2xl font-bold text-forest-900">Core focus areas</h2>
+            <h2 className="font-sans text-2xl font-bold text-forest-900">Core Focus Areas</h2>
             <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700">
               {aboutCopy.focusAreas.map((area) => (
                 <li key={area}>{area}</li>
@@ -38,7 +38,7 @@ export default function AboutPage() {
           </article>
         </div>
         <div className="mt-5 grid gap-5 md:grid-cols-2">
-          {aboutCopy.whoYouWorkWith.map((item) => (
+          {aboutCopy.directDeveloperContact.map((item) => (
             <article key={item.title} className="rounded-lg border border-border bg-paper-100 p-6 shadow-sm">
               <h2 className="font-sans text-xl font-bold text-forest-900">{item.title}</h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-700">{item.description}</p>

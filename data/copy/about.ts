@@ -1,14 +1,14 @@
 export const aboutCopy = {
-  headline: "Small Portland team. Practical ecommerce and web systems.",
+  headline: "Portland-based ecommerce and web development",
   intro:
-    "We’re a small Portland-based web and ecommerce studio focused on building practical systems for growing businesses.",
+    "Rose City Commerce is owned and operated by Liam Crawshaw, a Portland-based ecommerce engineer focused on building practical websites, storefronts, integrations, and internal tools.",
   background: [
-    "Before starting Rose City Commerce, we worked across ecommerce engineering teams supporting brands including Fender, PreSonus, Jackson, and Leatherman, alongside independent local businesses, ecommerce brands, and creative platforms.",
-    "Today we help businesses build and maintain Shopify storefronts, websites, integrations, and internal workflows without unnecessary complexity."
+    "Over the past several years, I've worked across enterprise ecommerce platforms, Shopify storefronts, custom web applications, product data systems, and performance initiatives supporting brands including Fender, PreSonus, Jackson, and Leatherman, while also helping local businesses and independent brands improve their digital presence.",
+    "Today, Rose City Commerce helps businesses build and maintain Shopify storefronts, websites, integrations, and internal workflows without unnecessary complexity."
   ],
   howIWork: [
-    "We focus on practical improvements that help businesses operate more smoothly, whether that’s improving a storefront experience, simplifying content management, increasing site speed, or reducing manual work through automation.",
-    "We prefer clear communication, maintainable systems, and long-term relationships over oversized scopes and complicated process."
+    "I focus on practical improvements that help businesses operate more smoothly, whether that's improving a storefront experience, simplifying content management, increasing site speed, or reducing manual work through automation.",
+    "I prefer clear communication, maintainable systems, and long-term relationships over oversized scopes and complicated process."
   ],
   focusAreas: [
     "Shopify development",
@@ -19,16 +19,16 @@ export const aboutCopy = {
     "Automation and internal tooling",
     "Ongoing maintenance and support"
   ],
-  whoYouWorkWith: [
+  directDeveloperContact: [
     {
-      title: "Two experienced developers",
+      title: "Direct developer contact",
       description:
-        "You work directly with the people scoping the project, writing the code, and supporting the work after launch."
+        "When you work with Rose City Commerce, you work directly with the person planning the project, writing the code, and supporting the work after launch."
     },
     {
-      title: "Small-team communication",
+      title: "No layers of communication",
       description:
-        "We keep project conversations practical, direct, and close to the actual decisions that need to be made."
+        "No account managers. No layers of communication. Just direct collaboration and practical technical execution."
     }
   ],
   values: [
@@ -37,16 +37,16 @@ export const aboutCopy = {
       description: "Clear priorities, realistic recommendations, and straightforward communication."
     },
     {
-      title: "Practical speed",
+      title: "Practical Speed",
       description: "Move quickly where it matters without creating technical debt that causes problems later."
     },
     {
-      title: "Maintainable systems",
-      description: "Build setups that clients can realistically maintain and grow over time."
+      title: "Maintainable Systems",
+      description: "Build solutions that clients can realistically maintain and grow over time."
     },
     {
-      title: "Long-term thinking",
-      description: "We prefer durable solutions and ongoing relationships over quick one-off work."
+      title: "Long-Term Thinking",
+      description: "Focus on durable systems and relationships rather than short-term fixes."
     }
   ]
 } as const;

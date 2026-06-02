@@ -52,7 +52,7 @@ export default function HomePage() {
 
       <PlatformsStrip />
 
-      <Section className="pt-0">
+      <Section>
         <FreeAuditSection />
       </Section>
 

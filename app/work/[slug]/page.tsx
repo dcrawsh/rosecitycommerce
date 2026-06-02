@@ -41,7 +41,7 @@ export default async function CaseStudyDetail({
     <Section compactTop titleAs="h1" title={study.title} intro={study.excerpt}>
       <div className="grid gap-8">
         <Image
-          alt={`${study.client} website screenshot`}
+          alt={`${study.title} screenshot`}
           className="h-auto w-full rounded-lg border border-border bg-white"
           height={540}
           priority
@@ -57,36 +57,126 @@ export default async function CaseStudyDetail({
           </div>
         ) : null}
 
-        <div className="grid gap-6 md:grid-cols-2">
-          <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-xl font-bold text-forest-900">Context</h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.context}</p>
-          </article>
-          <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-            <h2 className="font-sans text-xl font-bold text-forest-900">Problem</h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.problem}</p>
-          </article>
-        </div>
+        {study.url ? (
+          <Link
+            className="inline-flex w-fit items-center rounded-md border border-border bg-white px-5 py-3 text-sm font-semibold text-charcoal-900"
+            href={study.url}
+          >
+            Visit project
+          </Link>
+        ) : null}
 
-        <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">Solution</h2>
-          <ul className="mt-3 space-y-2 text-sm text-slate-700">
-            {study.solution.map((item) => (
-              <li key={item}>{item}</li>
+        {study.sections ? (
+          <div className="grid gap-6">
+            {study.sections.map((section) => (
+              <article key={section.title} className="rounded-lg border border-border bg-white p-6 shadow-sm">
+                <h2 className="font-sans text-2xl font-bold text-forest-900">{section.title}</h2>
+                {section.intro ? (
+                  <div className="mt-3 space-y-3 text-sm leading-relaxed text-slate-700">
+                    {(Array.isArray(section.intro) ? section.intro : [section.intro]).map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                ) : null}
+                {section.subsections ? (
+                  <div className="mt-5 grid gap-5">
+                    {section.subsections.map((subsection) => (
+                      <section key={subsection.title}>
+                        <h3 className="font-sans text-lg font-bold text-forest-900">{subsection.title}</h3>
+                        {subsection.body ? (
+                          <div className="mt-2 space-y-3 text-sm leading-relaxed text-slate-700">
+                            {subsection.body.map((paragraph) => (
+                              <p key={paragraph}>{paragraph}</p>
+                            ))}
+                          </div>
+                        ) : null}
+                        {subsection.bullets ? (
+                          <ul className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700">
+                            {subsection.bullets.map((item) => (
+                              <li key={item}>{item}</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                        {subsection.table ? (
+                          <div className="mt-3 overflow-x-auto rounded-md border border-border">
+                            <table className="min-w-full divide-y divide-border text-left text-sm">
+                              <thead className="bg-paper-100 text-xs font-semibold uppercase tracking-wider text-slate-700">
+                                <tr>
+                                  {subsection.table.headers.map((header) => (
+                                    <th key={header} className="px-4 py-3">
+                                      {header}
+                                    </th>
+                                  ))}
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-border text-slate-700">
+                                {subsection.table.rows.map((row) => (
+                                  <tr key={row.join("|")}>
+                                    {row.map((cell) => (
+                                      <td key={cell} className="px-4 py-3 align-top">
+                                        {cell}
+                                      </td>
+                                    ))}
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        ) : null}
+                      </section>
+                    ))}
+                  </div>
+                ) : null}
+              </article>
             ))}
-          </ul>
-        </article>
+          </div>
+        ) : (
+          <>
+            <div className="grid gap-6 md:grid-cols-2">
+              <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
+                <h2 className="font-sans text-xl font-bold text-forest-900">Context</h2>
+                <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.context}</p>
+              </article>
+              <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
+                <h2 className="font-sans text-xl font-bold text-forest-900">Problem</h2>
+                <p className="mt-3 text-sm leading-relaxed text-slate-700">{study.problem}</p>
+              </article>
+            </div>
+
+            <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
+              <h2 className="font-sans text-2xl font-bold text-forest-900">Solution</h2>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {study.solution.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          </>
+        )}
 
         {study.metricGroups ? <MetricComparison groups={study.metricGroups} /> : null}
 
-        <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="font-sans text-2xl font-bold text-forest-900">Results</h2>
-          <ul className="mt-3 space-y-2 text-sm text-slate-700">
-            {study.results.map((result) => (
-              <li key={result}>{result}</li>
-            ))}
-          </ul>
-        </article>
+        {!study.sections ? (
+          <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
+            <h2 className="font-sans text-2xl font-bold text-forest-900">Results</h2>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+              {study.results.map((result) => (
+                <li key={result}>{result}</li>
+              ))}
+            </ul>
+          </article>
+        ) : null}
+
+        {study.sidebarHighlights ? (
+          <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
+            <h2 className="font-sans text-2xl font-bold text-forest-900">Technical Highlights</h2>
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-700">
+              {study.sidebarHighlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
+          </article>
+        ) : null}
 
         <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
           <h2 className="font-sans text-2xl font-bold text-forest-900">Stack</h2>
