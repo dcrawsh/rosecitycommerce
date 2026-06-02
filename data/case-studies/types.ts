@@ -20,6 +20,13 @@ export type CaseStudyTag =
   | "Small Business"
   | "Responsive Design"
   | "React"
+  | "SaaS"
+  | "Experimentation"
+  | "A/B Testing"
+  | "Analytics"
+  | "OAuth"
+  | "Storybook"
+  | "Retention"
   | "Liquid"
   | "SFCC"
   | "Product Media"
@@ -44,6 +51,7 @@ export type CaseStudyTag =
 export type CaseStudySection = {
   title: string;
   intro?: string | string[];
+  video?: { src: string; title?: string };
   subsections?: Array<{
     title: string;
     body?: string[];

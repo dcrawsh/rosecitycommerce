@@ -78,6 +78,20 @@ export default async function CaseStudyDetail({
                     ))}
                   </div>
                 ) : null}
+                {section.video ? (
+                  <div className="mt-4 overflow-hidden rounded-md border border-border">
+                    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                      <iframe
+                        className="absolute inset-0 h-full w-full border-0"
+                        src={section.video.src}
+                        title={section.video.title ?? "Video"}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                ) : null}
                 {section.subsections ? (
                   <div className="mt-5 grid gap-5">
                     {section.subsections.map((subsection) => (
