@@ -18,7 +18,22 @@ export type CaseStudyTag =
   | "Branding"
   | "Localization"
   | "Small Business"
-  | "Responsive Design";
+  | "Responsive Design"
+  | "React"
+  | "Liquid"
+  | "SFCC"
+  | "Product Media"
+  | "PDP"
+  | "Frontend Architecture"
+  | "AWS Lambda"
+  | "Polaris"
+  | "GraphQL"
+  | "Admin Tools"
+  | "PIM"
+  | "Performance"
+  | "Core Web Vitals"
+  | "Frontend"
+  | "Web Performance";
 
 export type CaseStudy = {
   slug: string;
@@ -27,6 +42,7 @@ export type CaseStudy = {
   businessType: string;
   excerpt: string;
   impactSummary?: string;
+  disclaimer?: string;
   tags: CaseStudyTag[];
   context: string;
   problem: string;

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MetricComparison } from "@/components/MetricComparison";
+import { PortfolioDisclaimer } from "@/components/PortfolioDisclaimer";
 import { Section } from "@/components/Section";
 import { getCaseStudyBySlug } from "@/data/case-studies";
 
@@ -47,6 +48,8 @@ export default async function CaseStudyDetail({
           src={study.image}
           width={1200}
         />
+
+        {study.disclaimer ? <PortfolioDisclaimer text={study.disclaimer} /> : null}
 
         {study.impactSummary ? (
           <div className="rounded-lg border border-copper-500/30 bg-paper-100 p-5 text-sm font-medium leading-relaxed text-charcoal-900">
