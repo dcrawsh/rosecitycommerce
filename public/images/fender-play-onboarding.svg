@@ -1,0 +1,44 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Fender Play onboarding and experimentation portfolio image</title>
+  <desc id="desc">A neutral branded product engineering illustration for Fender Play onboarding, experimentation, analytics, and retention work.</desc>
+  <rect width="1200" height="675" fill="#17211D"/>
+  <rect x="64" y="64" width="1072" height="547" rx="28" fill="#F7F2E8"/>
+  <rect x="96" y="96" width="1008" height="483" rx="20" fill="#FFFFFF" stroke="#D9D0BF" stroke-width="2"/>
+  <rect x="96" y="96" width="1008" height="72" rx="20" fill="#111816"/>
+  <path d="M96 139H1104V168H96V139Z" fill="#111816"/>
+  <circle cx="136" cy="132" r="10" fill="#C9673A"/>
+  <circle cx="168" cy="132" r="10" fill="#E0B85E"/>
+  <circle cx="200" cy="132" r="10" fill="#78916F"/>
+  <text x="576" y="139" fill="#F7F2E8" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Fender Play</text>
+  <rect x="134" y="210" width="340" height="308" rx="18" fill="#F7F2E8" stroke="#D9D0BF" stroke-width="2"/>
+  <text x="166" y="260" fill="#17211D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Personalized path</text>
+  <text x="166" y="296" fill="#4B5A52" font-family="Arial, Helvetica, sans-serif" font-size="18">Skill level, goals, and instrument</text>
+  <rect x="166" y="338" width="130" height="44" rx="22" fill="#C9673A"/>
+  <text x="231" y="367" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Guitar</text>
+  <rect x="312" y="338" width="120" height="44" rx="22" fill="#FFFFFF" stroke="#D9D0BF" stroke-width="2"/>
+  <text x="372" y="367" fill="#17211D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Bass</text>
+  <rect x="166" y="406" width="188" height="12" rx="6" fill="#78916F"/>
+  <rect x="166" y="436" width="246" height="12" rx="6" fill="#D9D0BF"/>
+  <rect x="166" y="466" width="166" height="12" rx="6" fill="#D9D0BF"/>
+  <rect x="526" y="210" width="340" height="138" rx="18" fill="#17211D"/>
+  <text x="558" y="262" fill="#F7F2E8" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Experiment cohorts</text>
+  <rect x="558" y="292" width="116" height="40" rx="20" fill="#C9673A"/>
+  <text x="616" y="318" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle">Variant A</text>
+  <rect x="690" y="292" width="116" height="40" rx="20" fill="#78916F"/>
+  <text x="748" y="318" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle">Variant B</text>
+  <rect x="526" y="380" width="340" height="138" rx="18" fill="#F7F2E8" stroke="#D9D0BF" stroke-width="2"/>
+  <text x="558" y="432" fill="#17211D" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Analytics pipeline</text>
+  <path d="M562 472H640" stroke="#C9673A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M668 472H746" stroke="#78916F" stroke-width="8" stroke-linecap="round"/>
+  <path d="M774 472H834" stroke="#E0B85E" stroke-width="8" stroke-linecap="round"/>
+  <text x="558" y="500" fill="#4B5A52" font-family="Arial, Helvetica, sans-serif" font-size="16">Firebase, Avo, Segment, dashboards</text>
+  <rect x="918" y="210" width="168" height="308" rx="18" fill="#111816"/>
+  <rect x="938" y="238" width="128" height="226" rx="10" fill="#F7F2E8"/>
+  <circle cx="1002" cy="492" r="14" fill="#C9673A"/>
+  <rect x="956" y="268" width="92" height="10" rx="5" fill="#17211D"/>
+  <rect x="956" y="298" width="64" height="10" rx="5" fill="#78916F"/>
+  <rect x="956" y="338" width="92" height="54" rx="10" fill="#FFFFFF" stroke="#D9D0BF" stroke-width="2"/>
+  <rect x="956" y="410" width="92" height="18" rx="9" fill="#C9673A"/>
+  <path d="M474 364H526" stroke="#C9673A" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
+  <path d="M866 364H918" stroke="#78916F" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
+</svg>
