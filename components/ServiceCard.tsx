@@ -5,7 +5,7 @@ export function ServiceCard({ service }: { service: ServicePackage }) {
     <article className="rounded-lg border border-border bg-white p-6 shadow-sm">
       <div className="flex items-center justify-between gap-4">
         <h3 className="font-sans text-2xl font-bold text-forest-900">{service.title}</h3>
-        <p className="text-sm font-semibold text-copper-600">Starting at {service.startingAt}</p>
+        {/* <p className="text-sm font-semibold text-copper-600">Starting at {service.startingAt}</p> */}
       </div>
       <p className="mt-3 text-sm leading-relaxed text-slate-700">{service.summary}</p>
 

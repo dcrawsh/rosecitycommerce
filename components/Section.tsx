@@ -24,12 +24,17 @@ export function Section({
 
   return (
     <section
-      className={cn(compactTop ? "pb-16 pt-10 md:pb-20 md:pt-12" : "py-16 md:py-20", className)}
+      className={cn(
+        compactTop
+          ? "pb-0 pt-8 last:pb-8 md:pt-10 md:last:pb-10"
+          : "pb-0 pt-8 last:pb-8 md:pt-10 md:last:pb-10",
+        className
+      )}
       id={id}
     >
       <div className="mx-auto max-w-6xl px-5">
         {(title || intro) && (
-          <div className="mb-8 max-w-3xl md:mb-10">
+          <div className="mb-5 max-w-3xl md:mb-6">
             {title ? (
               <Heading className="text-balance font-sans text-3xl font-bold tracking-tight text-forest-900 md:text-4xl">
                 {title}

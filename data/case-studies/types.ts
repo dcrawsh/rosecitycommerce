@@ -33,7 +33,27 @@ export type CaseStudyTag =
   | "Performance"
   | "Core Web Vitals"
   | "Frontend"
-  | "Web Performance";
+  | "Web Performance"
+  | "TypeScript"
+  | "Canvas"
+  | "PostHog"
+  | "Product Analytics"
+  | "Cloudflare"
+  | "Browser Gaming";
+
+export type CaseStudySection = {
+  title: string;
+  intro?: string | string[];
+  subsections?: Array<{
+    title: string;
+    body?: string[];
+    bullets?: string[];
+    table?: {
+      headers: string[];
+      rows: string[][];
+    };
+  }>;
+};
 
 export type CaseStudy = {
   slug: string;
@@ -43,11 +63,15 @@ export type CaseStudy = {
   excerpt: string;
   impactSummary?: string;
   disclaimer?: string;
+  url?: string;
+  featured?: boolean;
   tags: CaseStudyTag[];
   context: string;
   problem: string;
   solution: string[];
   results: string[];
+  sections?: CaseStudySection[];
+  sidebarHighlights?: string[];
   metricGroups?: Array<{
     title: string;
     metrics: Array<{
