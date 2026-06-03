@@ -13,7 +13,7 @@ export const fenderPlayOnboardingExperimentation: CaseStudy = {
   impactSummary:
     "This work connected onboarding personalization, identity, experimentation, analytics, and shared frontend systems for a subscription SaaS product.",
   disclaimer: fenderPortfolioDisclaimer,
-  tags: ["SaaS", "Experimentation", "A/B Testing", "Analytics", "React", "Storybook", "Retention"],
+  tags: ["Websites", "A/B Testing", "Analytics", "React", "Storybook", "Retention"],
   context:
     "Fender Play is Fender's subscription-based learning platform for guitar, bass, and ukulele players. This project focused on improving the onboarding experience for new users by combining personalization, authentication, experimentation, analytics, and shared frontend systems.",
   problem:

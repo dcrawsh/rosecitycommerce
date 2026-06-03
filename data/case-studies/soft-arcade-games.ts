@@ -12,13 +12,13 @@ export const softArcadeGames: CaseStudy = {
   impactSummary:
     "Soft Arcade was built as a Rose City Commerce owned product to show how product engineering judgment, performance discipline, and analytics maturity can apply to even a small browser gaming experience.",
   tags: [
+    "Websites",
     "Next.js",
     "TypeScript",
     "Canvas",
     "PostHog",
-    "Product Analytics",
+    "Analytics",
     "Cloudflare",
-    "Browser Gaming",
     "Performance"
   ],
   context:

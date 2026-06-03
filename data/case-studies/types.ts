@@ -20,11 +20,8 @@ export type CaseStudyTag =
   | "Small Business"
   | "Responsive Design"
   | "React"
-  | "SaaS"
-  | "Experimentation"
   | "A/B Testing"
   | "Analytics"
-  | "OAuth"
   | "Storybook"
   | "Retention"
   | "Liquid"
@@ -44,9 +41,8 @@ export type CaseStudyTag =
   | "TypeScript"
   | "Canvas"
   | "PostHog"
-  | "Product Analytics"
   | "Cloudflare"
-  | "Browser Gaming";
+  | "Ecommerce";
 
 export type CaseStudySection = {
   title: string;
