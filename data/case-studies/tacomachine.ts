@@ -9,7 +9,7 @@ export const tacoMachineBilingualSite: CaseStudy = {
     "Built a bilingual website for a Portland food cart to improve discoverability and support both English- and Spanish-speaking customers.",
   impactSummary:
     "This project helped a local food cart move beyond a Facebook-only presence and make basic business information easier to find in both English and Spanish.",
-  tags: ["Next.js", "Localization", "Small Business", "Responsive Design", "SEO"],
+  tags: ["Websites", "Next.js", "Localization", "Small Business", "Responsive Design", "SEO"],
   context:
     "Taco Machine PDX relied primarily on Facebook for its online presence and needed a dedicated website customers could use to quickly find menus, hours, location information, and contact details.",
   problem:

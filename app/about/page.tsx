@@ -6,7 +6,7 @@ import { aboutCopy } from "@/data/copy/about";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Rose City Commerce is owned and operated by Liam Crawshaw, a Portland-based ecommerce engineer building Shopify storefronts, websites, integrations, and internal tools.",
+    "Rose City Commerce is owned and operated by Liam Crawshaw, a Portland-based software engineer building Shopify storefronts, websites, integrations, and internal tools.",
   keywords: ["Portland web developer", "Shopify developer Portland", "small business automation Portland"]
 };
 
