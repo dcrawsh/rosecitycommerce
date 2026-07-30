@@ -9,48 +9,46 @@ export const fenderProductSyncPlatform: CaseStudy = {
   client: "Fender in-house ecommerce engineering team",
   businessType: "IN-HOUSE SHOPIFY PLUS ENGINEERING",
   excerpt:
-    "Led development of an internal product-ingestion and synchronization platform connecting enterprise product data with Fender's multi-brand, multi-region Shopify Plus storefronts.",
+    "Led development of a product-ingestion platform that synchronized enterprise catalog data across Fender's Shopify Plus storefronts.",
   cardImpact:
     "Enabled non-engineering teams to run and monitor multi-store product and translation updates.",
   impactSummary:
-    "Turned recurring product, translation, and metafield maintenance into a reliable self-service workflow with validation, operational status, error reporting, and partial-success visibility.",
+    "Gave ecommerce teams a reliable way to manage product data, translations, and metafields without routine engineering support.",
   disclaimer: fenderPortfolioDisclaimer,
   tags: ["Shopify Plus", "Architecture", "AWS Lambda", "GraphQL", "Automation", "PIM"],
   context:
-    "Fender's brands and regions depended on consistent product information across multiple Shopify Plus storefronts, languages, locales, and merchandising contexts, with source data managed in enterprise product systems outside Shopify.",
+    "Fender needed consistent product information across Shopify Plus storefronts, brands, regions, and locales, with source data managed in enterprise systems outside Shopify.",
   problem:
-    "Manual and fragmented updates across stores and locales created operational overhead, increased the risk of inconsistent product data, and made engineering a bottleneck for controlled catalog changes. Operators also needed clear visibility when only part of a multi-product or multi-locale operation completed.",
+    "Fragmented updates across stores and locales created extra work, inconsistent data, and an engineering bottleneck. Teams also lacked clear status when only part of a multi-product or multi-locale operation completed.",
   solution: [
     "Led the product-ingestion platform from architecture through implementation",
     "Built Node.js services on AWS Lambda to integrate with internal PIM APIs and Shopify Admin GraphQL APIs",
     "Created a transformation layer for product specifications, translations, metafields, and catalog data before writes reached Shopify",
-    "Implemented validated catalog-ingestion and synchronization workflows across storefronts and localization requirements",
+    "Implemented validated catalog-ingestion workflows across storefronts and locales",
     "Built a Vite admin application using Shopify Polaris for store selection, SKU targeting, sync monitoring, and error reporting",
-    "Supported partial-success handling so teams could see which products or locales completed and which needed follow-up",
-    "Enabled self-service workflows for tech-spec synchronization, translation synchronization, metafield management, and multi-store catalog updates",
-    "Partnered with ecommerce, merchandising, and IT stakeholders to make the workflow useful to operators without exposing proprietary system details"
+    "Supported partial success so teams could see which products or locales completed and which needed follow-up",
+    "Partnered with ecommerce, merchandising, and IT on reusable workflows for specifications, translations, metafields, and catalog updates"
   ],
   results: [
     "Reduced manual catalog maintenance across storefronts and regions",
     "Improved consistency for localized product data and Shopify metafields",
-    "Enabled non-technical teams to execute targeted catalog updates through an internal admin tool",
-    "Increased reliability of product data deployments by making sync status and errors visible",
-    "Created reusable multi-store workflows and a maintainable integration layer between enterprise product data and Shopify Plus"
+    "Enabled non-engineering teams to run targeted updates through an internal admin tool",
+    "Made synchronization status, errors, and partial results visible",
+    "Created a reusable integration layer between enterprise product data and Shopify Plus"
   ],
   sections: [
     {
       title: "Context",
       intro: [
-        "Fender operated multi-brand, multi-region ecommerce experiences on Shopify Plus. Product specifications, translations, metafields, and catalog data originated in enterprise systems and needed to reach the correct storefronts and locales consistently.",
-        "Merchandising and ecommerce teams needed a reliable way to run targeted updates and understand their status without depending on an engineer for every routine catalog operation."
+        "Fender operated multi-brand, multi-region storefronts on Shopify Plus. Product specifications, translations, metafields, and catalog data originated in enterprise systems and needed to reach the correct stores and locales.",
+        "Ecommerce and merchandising teams needed to run targeted updates and understand their status without relying on an engineer for routine changes."
       ]
     },
     {
       title: "Problem",
       intro: [
-        "Manual and fragmented maintenance across storefronts and locales introduced operational overhead and made inconsistencies more likely. Product specifications, localized content, and metafields all had to be transformed into the shape expected by Shopify.",
-        "A batch could also succeed for some products or locales while failing for others. Treating the entire operation as a single pass/fail event would leave operators without the detail needed to follow up safely.",
-        "The platform therefore needed to make a complex enterprise workflow understandable and operable while preventing engineering from becoming the bottleneck."
+        "Manual updates across storefronts and locales were slow and prone to inconsistency. Specifications, localized content, and metafields also had to be transformed into Shopify's expected data shapes.",
+        "Batch operations could succeed for some products or locales and fail for others. Teams needed enough detail to resolve those failures without treating every run as all-or-nothing."
       ]
     },
     {
@@ -59,8 +57,7 @@ export const fenderProductSyncPlatform: CaseStudy = {
         {
           title: "Operator-Facing Admin Application",
           body: [
-            "Built an internal React application with Vite and Shopify Polaris. The interface let operators select stores and locales, target SKUs, initiate synchronization workflows, and review status and errors.",
-            "The admin experience translated integration details into a controlled self-service workflow for ecommerce and merchandising teams."
+            "Built an internal React application with Vite and Shopify Polaris that turned the integration into a controlled workflow for ecommerce and merchandising teams."
           ],
           bullets: [
             "Store and locale selection",
@@ -73,32 +70,28 @@ export const fenderProductSyncPlatform: CaseStudy = {
         {
           title: "Node.js and AWS Lambda Services",
           body: [
-            "Built microservice-style Node.js endpoints on AWS Lambda to separate operator actions from product-data ingestion and Shopify writes.",
-            "The services integrated with internal PIM APIs, validated and transformed enterprise product data, and sent the resulting updates through Shopify Admin GraphQL."
+            "Built microservice-style Node.js endpoints on AWS Lambda to separate admin actions from ingestion and Shopify writes. The services read from internal PIM APIs and sent validated, transformed data through Shopify Admin GraphQL."
           ]
         },
         {
           title: "Validation and Transformation",
           body: [
-            "Created a transformation boundary between upstream product data and Shopify-specific requirements. Product specifications, translations, metafields, and catalog attributes were normalized before any writes reached a storefront.",
-            "This kept upstream enterprise data concerns separate from regional Shopify merchandising requirements and made the integration easier to extend across stores."
+            "Created a boundary between upstream product data and Shopify-specific requirements. Specifications, translations, metafields, and catalog attributes were normalized before any storefront write.",
+            "Separating enterprise data from regional merchandising requirements made the integration easier to extend across stores."
           ]
         },
         {
           title: "Operational Reliability",
           body: [
-            "Validation, monitoring, and visible error reporting were part of the workflow rather than afterthoughts.",
-            "Partial-success handling showed operators which products or locales completed and which required follow-up, avoiding an opaque all-or-nothing result without exposing confidential implementation details."
+            "Validation, monitoring, and error reporting were built into the workflow. Partial-success handling identified which products or locales completed and which required follow-up."
           ]
         }
       ]
     },
     {
       title: "Broader Shopify Plus Platform Responsibilities",
-      intro: [
-        "The synchronization application was one part of my wider Shopify Plus work at Fender. Across the platform, that work included checkout extensions, customer account extensions, Shopify Flow integrations, Shopify Admin GraphQL, and deep API integrations.",
-        "Those broader responsibilities also included multi-brand and multi-region storefront work and integrations involving SAP, Zuora, Stripe, PIM systems, Segment, Avo, Firebase, OAuth/SSO, and AWS Lambda. These capabilities were not all implemented inside the product-sync application itself."
-      ]
+      intro:
+        "This application sat within broader Shopify Plus work at Fender that included checkout and customer account extensions, Shopify Flow, Admin GraphQL, and enterprise integrations. Those capabilities were platform responsibilities, not all features of the synchronization application."
     },
     {
       title: "Leadership and Collaboration",
@@ -106,15 +99,8 @@ export const fenderProductSyncPlatform: CaseStudy = {
         {
           title: "Technical Ownership",
           body: [
-            "Led the product-ingestion platform and partnered with ecommerce, merchandising, and IT stakeholders to align the architecture with real operating workflows.",
-            "Established reusable implementation patterns for product ingestion, transformation, Shopify writes, and operator-facing status instead of creating one-off scripts for each storefront."
-          ]
-        },
-        {
-          title: "Team Enablement",
-          body: [
-            "The platform enabled non-engineers to run and monitor controlled product-data workflows directly.",
-            "Across Fender technical initiatives, I mentored an in-house junior engineer and coordinated an offshore contractor team of four developers, supporting shared patterns and maintainable delivery."
+            "I led the product-ingestion platform and partnered with ecommerce, merchandising, and IT to align the architecture with operating needs.",
+            "We established reusable patterns for ingestion, transformation, Shopify writes, and status reporting instead of building one-off scripts for each storefront."
           ]
         }
       ]
@@ -126,11 +112,10 @@ export const fenderProductSyncPlatform: CaseStudy = {
           title: "Operational and Engineering Impact",
           bullets: [
             "Reduced manual catalog maintenance across storefronts and regions",
-            "Increased merchandising autonomy through a controlled self-service admin workflow",
+            "Enabled ecommerce teams to run targeted updates without routine engineering support",
             "Improved consistency for localized product data and Shopify metafields",
-            "Made product, store, and locale status and errors visible to operators",
-            "Supported partial success so follow-up work could be targeted",
-            "Created reusable multi-store workflows and a maintainable integration boundary between enterprise product data and Shopify Plus"
+            "Made product, store, and locale status and errors visible",
+            "Created reusable multi-store workflows and a maintainable Shopify Plus integration"
           ]
         }
       ]
