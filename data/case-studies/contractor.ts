@@ -8,7 +8,16 @@ export const contractorLeadGen: CaseStudy = {
   excerpt: "Migrated a WordPress site to a custom Next.js build and connected estimate requests to an Asana workflow.",
   impactSummary:
     "This project mattered because Portland Painting and Restoration needed a faster site customers could use easily and a clearer estimate flow the team could manage without chasing every lead manually.",
-  tags: ["Websites", "Automation", "SEO", "Next.js", "WordPress", "Small Business", "Performance"],
+  tags: [
+    "Websites",
+    "Automation",
+    "SEO",
+    "Next.js",
+    "WordPress",
+    "Small Business",
+    "Performance",
+    "Core Web Vitals"
+  ],
   context:
     "Portland Painting and Restoration needed a faster, cleaner website for paintpdx.com and a more organized way to handle estimate requests from the site.",
   problem:
