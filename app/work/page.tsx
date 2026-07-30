@@ -6,10 +6,10 @@ import { caseStudies, caseStudyTags, type CaseStudyTag } from "@/data/case-studi
 import { cn } from "@/components/utils";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Ecommerce Engineering Work",
   description:
-    "Local and practical web, ecommerce, automation, and tracking projects for Portland-area businesses.",
-  keywords: ["Portland web developer", "Shopify developer Portland", "small business automation Portland"]
+    "Shopify Plus architecture, full-stack integrations, ecommerce performance, experimentation, and select web projects.",
+  keywords: ["Shopify Plus developer", "ecommerce architecture", "Shopify GraphQL", "Core Web Vitals"]
 };
 
 export default async function WorkPage({
@@ -28,8 +28,8 @@ export default async function WorkPage({
     <Section
       compactTop
       titleAs="h1"
-      title="Work"
-      intro="Real projects across ecommerce, local business websites, owned web products, and practical technical support."
+      title="Ecommerce engineering work"
+      intro="Enterprise Shopify Plus systems, full-stack integrations, measurable performance work, experimentation, and select web projects for local businesses."
     >
       <div className="mb-6 flex flex-wrap gap-2">
         <Link

@@ -3,7 +3,7 @@ export const aboutCopy = {
   intro:
     "Rose City Commerce is owned and operated by Liam Crawshaw, a Portland-based software engineer focused on building practical websites, storefronts, integrations, and internal tools.",
   background: [
-    "Over the past several years, I've worked across enterprise ecommerce platforms, Shopify storefronts, custom web applications, product data systems, and performance initiatives supporting brands including Fender, PreSonus, Jackson, and Leatherman, while also helping local businesses and independent brands improve their digital presence.",
+    "Over eight years in software engineering, I've worked across enterprise ecommerce platforms, including three years on Shopify Plus, as well as React and TypeScript applications, product data systems, and performance initiatives supporting brands including Fender, PreSonus, Jackson, and Leatherman. I also help local businesses and independent brands improve their digital presence.",
     "Today, Rose City Commerce helps businesses build and maintain Shopify storefronts, websites, integrations, and internal workflows without unnecessary complexity."
   ],
   howIWork: [

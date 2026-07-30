@@ -7,15 +7,17 @@ export const fenderPerformanceOptimization: CaseStudy = {
   slug: "fender-large-scale-ecommerce-performance-optimization",
   title: "Large-Scale Ecommerce Performance Optimization",
   client: "Fender in-house ecommerce engineering team",
-  businessType: "IN-HOUSE ECOMMERCE ENGINEERING",
+  businessType: "IN-HOUSE SHOPIFY PLUS ENGINEERING",
   excerpt:
-    "Led performance initiatives across Fender's global ecommerce storefronts, improving page-load speed, Core Web Vitals, product discovery, media delivery, and frontend maintainability.",
+    "Led performance initiatives across Fender's global Shopify Plus storefronts, improving page-load speed, Core Web Vitals, product discovery, media delivery, and frontend maintainability.",
+  cardImpact:
+    "Cut homepage load from approximately 10s to 4s and reduced PDP LCP by more than 50%.",
   impactSummary:
     "Reduced homepage load time from approximately 10 seconds to 4 seconds, cut PDP Largest Contentful Paint by more than 50%, improved PDP Cumulative Layout Shift by more than 90%, and improved sitewide LCP by approximately 30–40%.",
   disclaimer: fenderPortfolioDisclaimer,
-  tags: ["Performance", "Core Web Vitals", "Shopify", "Frontend", "Web Performance", "Cloudflare"],
+  tags: ["Shopify Plus", "Performance", "Core Web Vitals", "Architecture", "React"],
   context:
-    "Fender's ecommerce properties supported high-traffic storefronts with media-rich product pages, long-form marketing pages, product recommendation rails, localized content, and third-party integrations.",
+    "Fender's Shopify Plus properties supported high-traffic global storefronts with media-rich product pages, long-form marketing pages, product recommendation rails, localized content, and third-party integrations.",
   problem:
     "The challenge was to improve both measured and perceived performance without limiting the flexibility needed by merchandising and marketing teams.",
   solution: [
@@ -41,8 +43,9 @@ export const fenderPerformanceOptimization: CaseStudy = {
     {
       title: "Context",
       intro: [
-        "Fender's ecommerce properties supported high-traffic storefronts with media-rich product pages, long-form marketing pages, product recommendation rails, localized content, and third-party integrations.",
-        "The challenge was to improve both measured and perceived performance without limiting the flexibility needed by merchandising and marketing teams."
+        "Fender's Shopify Plus properties supported high-traffic global storefronts with media-rich product pages, long-form marketing pages, product recommendation rails, localized content, and third-party integrations.",
+        "The challenge was to improve both measured and perceived performance without limiting the flexibility needed by merchandising and marketing teams.",
+        "I led initiatives by connecting technical measurements with customer-behavior data, then working through the tradeoffs with ecommerce, merchandising, and marketing stakeholders."
       ]
     },
     {
@@ -155,6 +158,12 @@ export const fenderPerformanceOptimization: CaseStudy = {
             "Improved Safari behavior and cross-browser reliability",
             "Reduced frontend rebuild time from approximately 20 seconds to 2 seconds through code splitting and architectural improvements"
           ]
+        },
+        {
+          title: "Developer Feedback Loop",
+          body: [
+            "Frontend architecture and code splitting were also applied to the development workflow. Reducing rebuild time from approximately 20 seconds to 2 seconds made performance work easier to iterate on and improved the feedback loop for shared storefront development."
+          ]
         }
       ]
     },
@@ -231,7 +240,7 @@ export const fenderPerformanceOptimization: CaseStudy = {
     }
   ],
   stack: [
-    "Shopify",
+    "Shopify Plus",
     "Liquid",
     "React",
     "TypeScript",

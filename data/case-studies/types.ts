@@ -1,6 +1,7 @@
 export type CaseStudyTag =
   | "Websites"
   | "Shopify"
+  | "Shopify Plus"
   | "Automation"
   | "SEO"
   | "Merchandising"
@@ -21,6 +22,7 @@ export type CaseStudyTag =
   | "Responsive Design"
   | "React"
   | "A/B Testing"
+  | "Experimentation"
   | "Analytics"
   | "Storybook"
   | "Retention"
@@ -29,6 +31,7 @@ export type CaseStudyTag =
   | "Product Media"
   | "PDP"
   | "Frontend Architecture"
+  | "Architecture"
   | "AWS Lambda"
   | "Polaris"
   | "GraphQL"
@@ -65,6 +68,7 @@ export type CaseStudy = {
   client: string;
   businessType: string;
   excerpt: string;
+  cardImpact?: string;
   impactSummary?: string;
   disclaimer?: string;
   url?: string;
