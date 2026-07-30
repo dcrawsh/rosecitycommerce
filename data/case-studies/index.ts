@@ -13,35 +13,31 @@ import { CaseStudyTag } from "@/data/case-studies/types";
 export type { CaseStudy, CaseStudyTag } from "@/data/case-studies/types";
 
 export const caseStudyTags: CaseStudyTag[] = [
-  "Websites",
-  "Shopify",
+  "Shopify Plus",
+  "Ecommerce",
+  "Architecture",
+  "GraphQL",
+  "AWS Lambda",
+  "Performance",
+  "Core Web Vitals",
+  "Subscriptions",
+  "Experimentation",
   "Automation",
   "React",
-  "A/B Testing",
-  "Analytics",
-  "Storybook",
-  "Retention",
-  "Performance",
-  "PostHog",
-  "Cloudflare",
-  "SEO",
-  "WordPress",
-  "Next.js",
-  "Content",
-  "Small Business"
+  "Next.js"
 ];
 
 export const caseStudies = [
-  softArcadeGames,
-  fenderPlayOnboardingExperimentation,
   fenderProductSyncPlatform,
   fenderPerformanceOptimization,
-  fenderPdpMediaGallery,
-  contractorLeadGen,
-  upperLeftIndiePlatform,
   cleanStrengthShopify,
+  fenderPdpMediaGallery,
+  fenderPlayOnboardingExperimentation,
+  softArcadeGames,
+  contractorLeadGen,
   eb5gRecovery,
-  tacoMachineBilingualSite
+  tacoMachineBilingualSite,
+  upperLeftIndiePlatform
 ];
 
 export function getCaseStudyBySlug(slug: string) {

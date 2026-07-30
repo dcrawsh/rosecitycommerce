@@ -10,10 +10,12 @@ export const fenderPlayOnboardingExperimentation: CaseStudy = {
   businessType: "IN-HOUSE PRODUCT ENGINEERING",
   excerpt:
     "Built personalized onboarding flows, custom React experimentation infrastructure, analytics tracking, and shared UI systems for Fender Play, helping product teams measure activation, iterate on onboarding experiences, and improve post-trial retention.",
+  cardImpact:
+    "Increased post-trial monthly active retention by 1.2% across two experiment cohorts.",
   impactSummary:
     "This work connected onboarding personalization, identity, experimentation, analytics, and shared frontend systems for a subscription SaaS product.",
   disclaimer: fenderPortfolioDisclaimer,
-  tags: ["Websites", "A/B Testing", "Analytics", "React", "Storybook", "Retention"],
+  tags: ["Experimentation", "Analytics", "React", "A/B Testing", "Retention"],
   context:
     "Fender Play is Fender's subscription-based learning platform for guitar, bass, and ukulele players. This project focused on improving the onboarding experience for new users by combining personalization, authentication, experimentation, analytics, and shared frontend systems.",
   problem:

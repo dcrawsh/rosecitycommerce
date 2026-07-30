@@ -59,7 +59,7 @@ export default function HomePage() {
       <Section
         id="work-preview"
         title="Recent work"
-        intro="Recent projects across Shopify, WordPress recovery, bilingual local websites, owned ecommerce, and independent media platforms."
+        intro="Recent projects across enterprise Shopify Plus, subscription ecommerce, local business websites, and owned web products."
       >
         <CaseStudyGrid studies={caseStudies.slice(0, 3)} />
       </Section>

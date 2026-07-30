@@ -11,6 +11,7 @@ export function CaseStudyGrid({ studies }: { studies: CaseStudy[] }) {
             alt={`${study.title} preview`}
             className="aspect-[16/10] h-auto w-full border-b border-border object-cover"
             height={320}
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
             src={study.image}
             style={{ objectPosition: study.imagePosition ?? "center" }}
             width={640}
@@ -31,6 +32,11 @@ export function CaseStudyGrid({ studies }: { studies: CaseStudy[] }) {
               {study.businessType}
             </p>
             <p className="mt-2 text-sm leading-relaxed text-slate-700">{study.excerpt}</p>
+            {study.cardImpact ? (
+              <p className="mt-4 border-l-2 border-copper-500 pl-3 text-sm font-semibold leading-relaxed text-forest-900">
+                {study.cardImpact}
+              </p>
+            ) : null}
             <Link
               className="mt-4 inline-flex text-sm font-semibold text-copper-600 underline-offset-4 hover:underline"
               href={`/work/${study.slug}`}
