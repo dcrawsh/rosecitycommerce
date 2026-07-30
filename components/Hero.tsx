@@ -14,7 +14,7 @@ export function Hero() {
             clean up product data, and connect the tools that keep orders and leads moving.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button href="/#free-audit" variant="secondary">
+            <Button href="/#free-audit" variant="accent">
               Request free audit
             </Button>
             <Button href="/work" variant="ghost">

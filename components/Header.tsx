@@ -20,7 +20,7 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Button href="/#free-audit" variant="secondary" className="px-4 py-2 text-sm">
+          <Button href="/#free-audit" variant="accent" size="sm">
             Request a free audit
           </Button>
         </nav>

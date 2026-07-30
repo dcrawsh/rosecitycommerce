@@ -36,7 +36,7 @@ export default function PortlandAutomationPage() {
       </Section>
 
       <Section>
-        <Button href="/#free-audit" variant="secondary">
+        <Button href="/#free-audit" variant="accent">
           Request free audit
         </Button>
       </Section>

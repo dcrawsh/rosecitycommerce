@@ -22,7 +22,7 @@ export function PricingTable() {
               <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <Button href="/contact" className="mt-6 w-full" variant={pkg.featured ? "secondary" : "primary"}>
+          <Button href="/contact" className="mt-6 w-full" variant={pkg.featured ? "accent" : "primary"}>
             Get a quote
           </Button>
         </article>

@@ -81,7 +81,7 @@ export function FreeAuditSection() {
           </ul>
 
           <div className="mt-5 flex flex-wrap gap-3">
-            <Button href="#free-audit" variant="secondary">
+            <Button href="#free-audit" variant="accent">
               Request free audit
             </Button>
             <Button href="/work" variant="ghost">
