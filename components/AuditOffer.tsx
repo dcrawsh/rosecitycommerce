@@ -8,7 +8,7 @@ export function AuditOffer() {
         Request a free quick site review and we will send practical next steps.
       </p>
       <div className="mt-4 flex flex-wrap gap-3">
-        <Button href="/#free-audit" variant="secondary">
+        <Button href="/#free-audit" variant="accent">
           Request free audit
         </Button>
         <Button href="/work" variant="ghost">

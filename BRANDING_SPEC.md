@@ -5,20 +5,33 @@ Forest + Copper
 
 ## Color System
 - Primary (Evergreen): `#163229`
-- Primary Hover: `#0f241e`
+- Primary Hover / Deep Evergreen: `#0B1F1A`
 - Accent (Copper): `#B56A3A`
-- Accent Hover: `#9c592f`
+- Accent Hover: `#9C592F`
+- Accent Soft: `#F4E3D7`
 - Background Paper: `#F6F3ED`
 - Soft Background: `#FFFCF8`
 - White Surface: `#FFFFFF`
-- Charcoal Text: `#2B2F31`
-- Slate Text: `#4A5451`
+- Crisp Surface: `#FAFAF7`
+- Raised Surface: `#F4F5F2`
+- Charcoal Text: `#202625`
+- Secondary Text: `#44504C`
+- Cool Support: `#EEF3F1`, `#CBD8D3`, `#3D5A53`
 - Border: `#D8D3C9`
+- Strong Border: `#BDB6AA`
+- Cool Border: `#D7E0DC`
 - Muted Surface: `#ECE8DF`
 - Success: `#1F7A4F`
 - Warning: `#9A6A14`
 - Error: `#B42318`
 - Info: `#1D4E89`
+
+## Color Usage
+- Evergreen remains the brand anchor for headings, primary actions, dark panels, and selected metrics.
+- Copper is reserved for conversion CTAs, active states, focus rings, and selective highlights.
+- Paper colors retain local warmth, but should be used as section bands or accents rather than the dominant surface.
+- Surface colors are the default page and card foundation for a sharper, more modern interface.
+- Cool support colors are used for technical/product signals, metric surfaces, and stack or tool tags.
 
 ## Typography
 - Heading/UI font: `Manrope` (Google Fonts)
@@ -42,14 +55,25 @@ Forest + Copper
 ## Component Rules
 - Buttons:
   - Primary: evergreen background, paper text
-  - Secondary CTA: copper background, paper text
-  - Ghost: white surface with border
+  - Accent: copper background, paper text
+  - Secondary: white/surface background with stronger border
+  - Ghost: quiet surface with border
+  - Tertiary/link: text-level actions
 - Cards:
-  - White background, border `#D8D3C9`, `lg` radius, `sm` or `md` shadow
+  - Default: white/surface background, border `#D8D3C9`, `lg` radius, `sm` shadow
+  - Elevated: stronger shadow and border shift on hover
+  - Feature: larger padding and cool border
+  - Dark: evergreen panel
+  - Metric: compact cool support surface
+  - Subtle: quiet raised surface
 - Sections:
   - 64-96px vertical rhythm on desktop, 48-64px on mobile
+  - Compact sections use 32-40px vertical rhythm
+  - Variants include default, band, dark, compact, and editorial
 - Badges:
-  - Rounded pill, subtle paper background
+  - Rounded pill, subtle neutral/cool background
+  - Accent variant is reserved for active/selected states
+  - Tech variant uses cool support colors
 - Navigation:
   - Sticky header with clear contact CTA
 - Forms:

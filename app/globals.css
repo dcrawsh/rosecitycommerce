@@ -17,11 +17,11 @@ body {
 }
 
 body {
-  @apply bg-paper-50 text-charcoal-900 antialiased;
+  @apply bg-surface-100 text-neutral-900 antialiased;
 }
 
 a {
-  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500;
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copper-500 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-100;
 }
 
 ::selection {

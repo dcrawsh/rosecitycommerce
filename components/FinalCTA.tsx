@@ -8,7 +8,7 @@ export function FinalCTA() {
         You work directly with us. Small team, clear communication, and practical next steps.
       </p>
       <div className="mt-6 flex flex-wrap gap-3">
-        <Button href="/#free-audit" variant="secondary">
+        <Button href="/#free-audit" variant="accent">
           Request free audit
         </Button>
         <Button href="/work" variant="primary" className="border-paper-50/40 bg-transparent text-paper-50 hover:bg-paper-50/10">

@@ -32,7 +32,7 @@ export default function PortlandWebsitesPage() {
       </Section>
 
       <Section>
-        <Button href="/#free-audit" variant="secondary">
+        <Button href="/#free-audit" variant="accent">
           Request free audit
         </Button>
       </Section>

@@ -65,7 +65,7 @@ export default function AboutPage() {
             Send us your site, goals, or current pain points and we’ll give you a practical recommendation.
           </p>
           <div className="mt-6">
-            <Button href="/#free-audit" variant="secondary">
+            <Button href="/#free-audit" variant="accent">
               Request a free audit
             </Button>
           </div>
